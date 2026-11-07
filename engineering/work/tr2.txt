@@ -1,0 +1,12 @@
+===== <WORKSPACE>\work\apk_raw\assets\libs\armeabi-v7a\libmono.so 3815628 bytes
+  type=3 machine=40 flags=0x5000002
+  sections: 21  phdrs: 5
+  PT_LOAD exec segments: [(1, '0x0', '0x39d0b8')]
+  DT_TEXTREL present: False None
+  DT_FLAGS: []  DF_TEXTREL=4
+  DT_FLAGS_1: []
+  DT_REL/RELENT/RELSZ: [56008] [0] [26648]
+  DT_PLTREL/PLTRELSZ: [17] [2016]
+    .rel.dyn               type=9 size=26648    ->                        exec=False
+    .rel.plt               type=9 size=2016     -> .plt                   exec=True  <== TEXTREL
+  TEXTREL relocation sections: [('.rel.plt', '.plt', 2016, 8)]

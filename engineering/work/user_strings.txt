@@ -1,0 +1,1188 @@
+Can't load from cache since the cache is empty
+Got a whole bunch of data, 
+ bytes
+GraphNodes_Graph
+No previous data, assigning default
+Deserializing...
+Deserialization complete - Process took 
+Error encountered : 
+Writing data to AstarData.data_backup
+Data is corrupt (
+Couldn't find graph 
+ in the data
+Logging... 
+KeyValuePair 
+One of the graphs saved was of an unknown type, the graph was of type '
+Deserializing Error Encountered - Writing data to AstarData.data_backup:
+Found 
+ graph types
+Creating Graph of type '
+Graph type (
+) wasn't found
+No NavGraph of type '
+' could be found
+' could be found, 
+ graph types are avaliable
+Graph index is out of range
+Node index is out of range : 
+Graph doesn't exist
+Graph 
+ is null - This should not happen
+There is no active AstarPath object in the scene
+No AstarPath object was found : 
++++ Destroyed - Cleaning Up Pathfinding Data +++
+Could not terminate pathfinding thread properly, trying Thread.Abort
+Destroying Graphs
+Returning Paths
+Canceled because AstarPath object was destroyed
+Cleaning up variables
+Too high area index - The maximum area index is 255
+Too low area index - The minimum area index is 0
+ has not defined any nodes
+Too many areas - The maximum number of areas is 256
+ small areas were detected (fewer than 
+ nodes),these might have the same IDs as other areas, but it shouldn't affect pathfinding in any significant way (you might get All Nodes Searched as a reason for path failure).
+Which areas are defined as 'small' is controlled by the 'Min Area Size' variable, it can be changed in the A* inspector-->Settings-->Min Area Size
+The small areas will use the area id 254
+There is no AstarPath object in the scene
+No new paths are accepted
+There are no graphs in the scene
+Initializing Path Queue...
+Starting Threaded Pathfinder...
+Starting Pathfinder...
+Error : No path was added to the queue, but the pathfinding was started
+Calling pathfinding with an already processed path
+Ending pathfinding thread due to a long delay in path requests.
+Pathfinding will be reactivated when a new path request is made
+Error : This part should never be reached
+The script is currently calculating paths, the serialization can interfere with the pathfinding
+Saving took 
+ s to complete
+Loading took 
+Pre processing graphs
+Scanning graph 
+ - Pre processing
+ - Assigning graph indices
+ - Post processing
+Post processing graphs
+Applying links
+Computing areas
+Late post processing
+Scanning - Process took 
+ ms to complete 
+The 'useMultithreading' variable shouldn't be changed after initial setup (Awake) - Canceling pathfinding
+SerializerSettings
+Anchor SerializerSettings was not found in the data
+Couldn't parse A* version 
+Couldn't parse A* version
+Loading graph saved with a newer version of the A* Pathfinding Project, trying to load, but you might get errors.
+File version: 
+ Current A* version: 
+Loading graphs saved with an older version of the A* Pathfinding Project, trying to load.
+The graph specified is not serializable, the graph is of type 
+Stored nodes  
+DeserializeGraphNodes
+DeserializeNodes
+Loading 
+ nodes
+Error loading nodes - Couldn't find anchor
+Run Length Encoding is too long 
+The editor specified is Null
+The graph specified is not (de)serializable (how it could be serialized in the first place is a mystery) the graph was of type 
+The anchors dictionary is null
+UserConnections
+Node connections over 256 (one byte), can't serialize
+You should only call the WriteError function when Serializing, not when DeSerializing
+Unity Object References should be added using AddUnityReferenceValue
+Can't serialize type '
+Couldn't find key '
+' in the data, returning default
+The variable '
+' was not serialized correctly and can therefore not be deserialized
+' in the data, returning default (
+Can't deSerialize type '
+File does not exist : 
+Node Connections
+Node Connection Costs
+Node Positions
+Run Length Encoding
+Loading from 3.0.1
+End - 
+Error converting 
+original
+'s output to 
+'s input
+Canceled path because a new one was requested
+GameObject: 
+Done Remove
+Sending null node to BinaryHeap
+Forced to discard nodes because of binary heap size limit, please consider increasing the size (
+Node is not in the heap (index 
+=== Writing Binary Heap ===
+Number of items: 
+Capacity: 
+A collider must be attached to the GameObject for DynamicGridObstacle to work
+No collider is attached to the GameObject. Canceling check
+On Rescan
+No CharacterController is attached to the GameObject
+This should not be called if not GetNearest has been overriden, and if GetNearest has been overriden, you should override this function too, always return a node which returns true when passed to constraint.Suitable (node)
+Destroying Graph
+Scan is not implemented in this NavGraph
+Diameter
+Height
+RayDirection
+heightMask
+fromHeight
+thickRaycastDiameter
+thickRaycast
+collisionCheck
+heightCheck
+unwalkableWhenNoGround
+One of the grid's sides is longer than 1024 nodes
+The Grid Graph is not scanned, cannot update area 
+DeSerialization Error : Couldn't cast the node to the appropriate type - GridGenerator
+Offset is zero, this should not happen
+unclampedSize
+cutCorners
+neighbours
+center
+rotation
+nodeSize
+collision
+maxClimb
+maxClimbAxis
+maxSlope
+erodeIterations
+penaltyAngle
+penaltyAngleFactor
+penaltyPosition
+penaltyPositionOffset
+penaltyPositionFactor
+aspectRatio
+textureData
+source
+enabled
+factor
+channel
+maxDistance
+limits
+thickRaycastRadius
+searchTag
+recursive
+NavGraph hasn't been generated yet or does not contain any nodes
+Couldn't cast graph to the appropriate type (graph isn't a Navmesh type graph, it doesn't implement the INavmesh interface)
+NavMeshGenerator:Linecast: The 'hint' must be a MeshNode
+ Node is unwalkable
+ Current == End
+Contains point
+Possible infinite loop, intersected > 200 nodes
+Count 
+This should not happen
+Colinear - Aborting
+Colinear - Continuing
+Other == previous node
+No next node (wall)
+Couldn't read .obj file at '
+The specified graph does not implement interface 'INavmesh'
+One or more triangles are identical to other triangles, this is not a good thing to have in a navmesh
+Increasing the scale of the mesh might help
+Number of triangles with error: 
+Serialization Error : Couldn't cast the node to the appropriate type - NavMeshGenerator
+offset
+sourceMesh
+NavGraph Mesh
+A MeshNode only contains 3 vertices
+/Recast/recast
+The C++ version of recast can only be used in editor or standalone mode, I'm sure it cannot be used in the webplayer, but other platforms are not tested yet
+If you are in the Unity Editor, try switching Platform to Standalone just when scanning, scanned graphs can be cached to enable them to be used in a webplayer
+No MeshFilters where found contained in the layers specified by the 'mask' variable
+contourMaxError
+cellSize
+cellHeight
+walkableHeight
+walkableClimb
+maxEdgeLength
+forcedBoundsCenter
+forcedBoundsSize
+showMeshOutline
+includeOutOfBounds
+regionMinSize
+characterRadius
+useCRecast
+{0} = {1} (Bits: {2})
+Calling Build Tree
+No file was found at '
+usemtl 
+mtllib 
+usemap 
+usemtl
+usemap
+mtllib
+Array Lengths are not the same
+VoxelMesh
+DebugMesh
+, process took 
+ms to complete
+To many vertices - Couldn't generate mesh
+rcBuildContours: Could not find merge target for bad contour 
+Fixing contour
+rcBuildContours: Failed to find merge points for 
+rcBuildContours: Failed to merge contours 
+Max Erode Radius is 255
+Too many layers
+Path could not be casted to Mesh Nodes
+Funnel Graph is null
+Removing identical left and right
+Wrong Side 2
+Avoiding infinite loop
+Can't convert 
+This part should not be reached - Error in ModifierConverted
+Input: 
+Output: 
+No NavGraphs have been calculated yet - Don't run any pathfinding calls in Awake
+Couldn't find close nodes to either the start or the end (start = 
+ end = 
+The node closest to the start point is not walkable
+There is no valid path to the target (start area: 
+, target area: 
+No open points, the start node didn't open any nodes
+No open points, whole area searched
+Inifinity loop? >1024 node path
+C == NULL
+C == NULL 
+Path Failed : 
+Path Completed : 
+Computation Time 
+ ms Searched Nodes 
+ Path Length 
+Search Iterations 
+End Node
+Point: 
+Graph: 
+Start Node
+Binary Heap size at completion: 
+Error: 
+Path Number 
++++ Performing 65k Cleanup Operation +++
++++ Zeroing All Path IDs +++
+No Graphs Are Created
+No targets were assigned
+No target nodes were walkable
+There are no valid paths to the targets
+This should have been cleared after it was called on 'this' path. Was it not called? Or did the delegate reset not work?
+Last Found Path Length 
+Paths (
+ Found: 
+Length: 
+Can only end profiling for a tag which has already been started (tag was 
+============================
+Profile results:
+Profile 
+ took 
+ ms to complete over 
+ iteration
+, averaging 
+ ms per call
+Total runtime: 
+ seconds
+Opening an already open entry (
+Can't end profile before one has started (
+Cannot close an already closed entry (
+Size Profile results:
+CharacterShooting
+BlobShadow
+Soldier
+Untagged
+attack
+lay_egg
+attack_idle
+HealthBarPosition
+Barrel
+particle_shoot
+WoundedPoint
+root_bone/pelvis_bone
+root_bone/spine_bone
+shoot_idle
+zombie_attack
+zombie_attack1
+zombie_attack2
+feed_start
+die_static
+LevelEnd
+SoldiersAreaDamageAudio
+Features
+Ground
+shoot_idle_move
+TouchRaycastCollider
+wounded
+DeltaForceSpecialist
+MachineGunner
+AirborneSpecialist
+Grenadier
+SOLDIER_DEAD_BULLET
+SOLDIER_DEAD_SUICIDE
+SOLDIER_DEAD_GRENADE
+SOLDIER_DEAD_BAZOOKA
+SOLDIER_DEAD_MINE
+SOLDIER_DEAD_SPOTTER
+SOLDIER_DEAD_TANK
+SOLDIER_DEAD_TECHNICAL
+SOLDIER_DEAD_MISC
+Chicken
+ZOMBIE_CHICKEN
+Explosive
+ZOMBIE_EXPLOSIVE
+ZOMBIE_GIANT
+Normal
+ZOMBIE_REGULAR
+ZOMBIE_VOMIT
+Civilian
+CivilianSoldier
+Eliminate
+Animal
+EnemyGuard
+TankTurret
+TechnicalTurret
+DeadEnemy
+SOLDIER_DIE_POSITION
+Level_
+Settings
+_GamePlay
+WoundedSoldier
+CameraFollowTarget
+Yey, we got a path back. Did it have an error? 
+End Of Path Reached
+scared
+parachute_idle
+parachute_land
+boot_camp
+MedkitBig
+Sniper
+Suicide
+HitPoint
+root_bone/spine_bone/head_bone/VomitPoint
+root_bone/spine_bone1/spine_bone2/right_arm1_bone/right_arm2_bone/right_arm3_bone
+SuicideTrigger
+Notifications/numbers/
+Zombie
+Terrain
+LevelAudio
+ExtraSoldier
+Magazine
+HeavyBarrel
+LightArmor
+HeavyArmor
+BootCampTraining
+InfantryTraining
+MarineTraining
+RangerTraining
+SpecOpsTraining
+AirborneTraining
+DeltaForceTraining
+unlockSpecialist
+Briefing
+MainIcon
+Overlay
+JPEGEncoder not complete, cannot get bytes!
+TUTORIAL_CONGRATULATION_1
+Highlight
+TUTORIAL_SHOOTING
+TUTORIAL_CP
+InGameButtons
+HqButton
+TUTORIAL_HQ
+TUTORIAL_CONGRATULATION_2
+GrenadeButton
+TUTORIAL_SPECIAL_WEAPON
+TUTORIAL_COLLECTABLE
+TUTORIAL_DOG_TAGS
+MapButton
+TUTORIAL_MAP
+TUTORIAL_GO_TO_EXTRACTION
+TUTORIAL_END
+chapter1_intro
+Tutorial/TextBackground
+Tutorial/Text
+TUTORIAL_MOVE
+ButtonActions
+MinimizeAudio
+MaximizeAudio
+Learning/LearningBackground
+TUTORIAL_HEADER_MOVING
+TUTORIAL_TEXT_MOVING
+TUTORIAL_HEADER_FIRE
+TUTORIAL_TEXT_FIRE
+TUTORIAL_HEADER_GRENADES
+TUTORIAL_TEXT_GRENADES
+TUTORIAL_HEADER_BAZOOKAS
+TUTORIAL_TEXT_BAZOOKAS
+TUTORIAL_HEADER_CHANGING_HEAVY_WEAPONS
+TUTORIAL_TEXT_CHANGING_HEAVY_WEAPONS
+TUTORIAL_HEADER_MEDEVAC
+TUTORIAL_TEXT_MEDEVAC
+TUTORIAL_HEADER_PARATROOPERS
+TUTORIAL_TEXT_PARATROOPERS
+TUTORIAL_HEADER_SUPPLY_DROP
+TUTORIAL_TEXT_SUPPLY_DROP
+TUTORIAL_HEADER_MAP
+TUTORIAL_TEXT_MAP
+TUTORIAL_HEADER_COMMAND_POINTS
+TUTORIAL_TEXT_COMMAND_POINTS
+TUTORIAL_HEADER_BUY_COMMAND_POINTS
+TUTORIAL_TEXT_BUY_COMMAND_POINTS
+TUTORIAL_HEADER_DOG_TAGS
+TUTORIAL_TEXT_DOG_TAGS
+TUTORIAL_HEADER_EXTRACTION
+TUTORIAL_TEXT_EXTRACTION
+TUTORIAL_HEADER_AIR_STRIKE
+TUTORIAL_TEXT_AIR_STRIKE
+AnimalSpawnPoint
+MenuAngryChickensDebrief
+REPLAY_COUNTER
+DEAD_SOLDIERS_COUNT
+LEVEL_FAIL_POSITION
+CP_USED_BEFORE_LEVEL
+CP_USED_IN_LEVEL
+CP_USED_TOTAL
+FIRST_TRY
+SECOND_TRY
+THIRD_TRY
+FOURTH_TRY
+FIFTH_TRY
+FIFTH_OR_MORE_TRY
+Replays
+ABANDON_LEVEL
+Abandon
+SUCCESS_OR_FAIL
+SUCCESS
+FAILED_LEVEL
+Failed_Level
+PLAY_TIME_IN_HOURS
+0.0 - 0.1
+0.1 - 0.5
+0.5 - 1.0
+1.0 - 2.0
+2.0 - 5.0
+5.0 - 10.0
+over 10.0
+Single_missions_total_playtime
+Campaign_missions_total_playtime
+PLAY_TIME_MINUTES
+10 - xxx
+DEAD_COUNT
+1 - 7500
+7501 - 15000
+15001 - 22500
+22501 - 30000
+30001 - 60000
+60001 - 100000
+100001 - 150000
+150001 - 200000
+200001 - xxx
+_CPUse
+SoldierParatrooper
+EnemyDestructibleBuilding
+LevelLoader
+Debrief
+Technical
+Destroy
+DEAD_REASON
+Dead_Reasons
+IN_GAME_PURCHASE
+In_Game_Purchases
+SoldierStartPoint
+Maps/map_bootcamp
+TopBar/PointsBarPos/ShoppingCartButton
+Maps/map_level
+_MainTex
+IntelButton
+StoreLogic
+Intelpack
+machine_gunner
+delta_force
+_Airborne
+airborne
+grenadier
+Cylinder002
+soldier_face
+SoldierFace/soldier_face
+EnemySpawnPoint
+TipText
+ZOMBIETIP
+LevelLoadingScene
+ZombiePauseButton
+Grenade
+_Color
+ChapterSelect
+MenuExtras
+Credits
+BuyCommandPoints(Clone)
+MenuMain
+Purchased
+Hilight
+BriefingInit
+Specialist locked
+Training locked
+Not enough CP
+Not enough medals
+BRIEFING_STORE_ITEM_TOPIC_DEFAULT_ITEMS
+BRIEFING_STORE_ITEM_DESCRIPTION_DEFAULT_ITEMS
+BRIEFING_STORE_ITEM_TOPIC_DEFAULT_SPECIALIST
+BRIEFING_STORE_ITEM_DESCRIPTION_DEFAULT_SPECIALIST
+BRIEFING_STORE_ITEM_TOPIC_DEFAULT_TRAINING
+BRIEFING_STORE_ITEM_DESCRIPTION_DEFAULT_TRAINING
+BRIEFING_STORE_ITEM_TOPIC_
+BRIEFING_STORE_ITEM_DESCRIPTION_
+BuyStuff
+ListItemsPos
+CollectableDG
+Background
+LEVEL_
+_TITLE
+_BRIEFING
+LEVEL_BRIEFING_OBJECTIVE
+TopBar
+TitlePos
+LabelTitle
+DescriptionPos
+LabelBriefing
+ImageMap
+POPUP_DIFFICULTY
+POPUP_REFERER_UNLOCKED
+POPUP_AIRBORNE_UNLOCKED
+POPUP_DELTAFORCE_UNLOCKED
+POPUP_GRENADIER_UNLOCKED
+POPUP_MEDIC_UNLOCKED
+POPUP_MACHINEGUNNER_UNLOCKED
+Soldiers
+MenuUpgrades
+attention
+StoreMaterials/Store
+CP_AMOUNT_BEFORE_LEVEL
+1 - 10000
+10001 - 20000
+20001 - 40000
+40001 - 75000
+75001 - 100000
+150001 - 250000
+250001 - 400000
+400001 - xxx
+NameDG
+StoreMachineGunner
+StoreDeltaForce
+StoreMedic
+StoreAirborne
+StoreGrenadier
+StoreBootCampTraining
+StoreInfantryTraining
+StoreMarineTraining
+StoreRangerTraining
+StoreSpecOpsTraining
+StoreAirborneTraining
+StoreDeltaForceTraining
+Potential
+Current
+Toughness
+FirePower
+Text1/Header
+CHAPTER_INTRO_HEADER_
+Text1/Name
+CHAPTER_INTRO_NAME_
+chapter_intro_fade
+chapter4_intro
+Chapter1
+Chapter1/Lock
+Chapter
+_button
+Level_button_
+ChapterSelect/
+Number
+CHILLINGO_EULA_LINK_ANDROID
+CHILLINGO_PP_LINK
+CHILLINGO_TOS_LINK
+BazookaButton
+AirStrikeButton
+CommandPointsBar
+TUTORIAL
+Level Select
+Replay 
+Debug mode is ON
+Debug mode is OFF
+CHAPTER_
+LevelNumbers/lvl
+FN4WGVWBZR4Z9TYGQHZH
+Campaign
+SingleMissions
+LevelSelect
+NO_NETWORK_TITLE
+NO_NETWORK_DESCRIPTION
+NO_NETWORK_BUTTON
+https://twitter.com/#!/kukouri
+http://www.facebook.com/tinytroopers
+LEVEL_ANGRY_CHICKENS_TITLE
+LEVEL_ANGRY_CHICKENS_BRIEFING
+Text_title
+Text_body
+Start Angry Chickens
+AngryChickens
+You survived for 
+You killed 
+ chickens
+ special chickens
+MISSION_SUCCESS
+MISSION_FAILED
+Disabled
+MissionName
+LevelStats
+LevelStat2
+LevelStat3
+particle_star_earned
+PlayStarSound
+LevelStat
+chapter2_intro
+chapter3_intro
+FACEBOOK_MESSAGE
+http://kukouri.com/tinytroopers/
+GAME_NAME
+http://kukouri.com/tinytroopers/images/screenshot_2.jpg
+FACEBOOK_CAPTION
+TWITTER_MESSAGE
+Facebook
+FACEBOOK_QUESTION
+Twitter
+TWITTER_QUESTION
+Civilians: 
+Soldiers: 
+Civilian buildings: 
+Animals: 
+Hostages: 
+Enemy rookies: 
+Enemies: 
+Special enemies: 
+Enemy light vehicle: 
+Enemy heavy vehicle: 
+Enemy barracks: 
+Enemy towers: 
+Enemy bunkers: 
+Enemy radio towers: 
+Enemy missiles: 
+Intelligence: 
+ + Cards: 
+ + WMD: 
+ + DropIntel: 
+Earned Command points: 
+Your total command points: 
+Success
+Promoted soldiers:
+ xp, Rank: 
+, Kills: 
+, ID: 
+, isSaved: 
+Survived soldiers:
+ xp, Rank:
+Dead soldiers:
+Missions
+MenuSingleMissions
+EXTRAS_TOP_SOLDIERS_NO_MISSIONS_YET
+EXTRAS_TOP_SOLDIERS_KILLS
+RealMoneyMenuNew
+FALLBACK: No missions played yet!
+NoSoldiers
+Tombstone
+Unlock
+--------
+inited
+EXTRAS_FRIENDCODE_CODE_USED
+TextfieldInput
+EXTRAS_FRIENDCODE_GOT_FROM_FRIEND
+EXTRAS_FRIENDCODE_TOUCH
+EXTRAS_FRIENDCODE_CONNECTING_INTERNET
+FriendCodeStatusText
+1q2w3z4x5t6y7p8v9k0n
+\A\b[0-9a-fA-F]+\b\Z
+ALREADY
+NOTUSED
+MISSING
+YOU HAVE USED YOURS!
+http://ec2-107-22-103-123.compute-1.amazonaws.com/register.php?hashi=
+FRIEND_CODE_REGISTER_NETWORK_ERROR
+FRIEND_CODE_REGISTER_SERVER_ERROR
+http://ec2-107-22-103-123.compute-1.amazonaws.com/fetchid.php?hashi=
+http://ec2-107-22-103-123.compute-1.amazonaws.com/checkown.php?idnum=
+http://ec2-107-22-103-123.compute-1.amazonaws.com/checkownfriend.php?idnum=
+http://ec2-107-22-103-123.compute-1.amazonaws.com/usefriend.php?idnum=
+&idfriend=
+FRIEND_CODE_CODE_USE_NETWORK_ERROR
+FRIEND_CODE_SUCCESFULLY_USED
+POPUP_FRIEND_UNLOCKED
+FRIEND_CODE_CODE_ALREADY_USED
+FRIEND_CODE_INVALID_CODE
+FRIEND_CODE_CODE_USE_SERVER_ERROR
+Level: 
+Fail times: 
+Success times: 
+Total play time: 
+Success total play time: 
+Success time avarage: 
+Success time best: 
+Success time worst: 
+Total dead soldiers: 
+Success total dead soldiers: 
+Success dead soldiers avarage: 
+Upgrades HQ
+MenuUpgradeHQ
+Upgrades
+NOT_FILLED
+Command
+REAL_MONEY_MENU_TOPIC_COMMAND_POINTS
+Dogtags
+REAL_MONEY_MENU_TOPIC_DOG_TAGS
+REAL_MONEY_MENU_TOPIC_CP_DOUBLER
+REAL_MONEY_MENU_TOPIC_EXP_DOUBLER
+REAL_MONEY_MENU_TOPIC_UNLOCK
+THIS SHOULD NOT HAPPEN!!!
+ItemListRealMoney
+Command1
+Command2
+Dogtags1
+Command3
+Dogtags2
+Command4
+Dogtags3
+Command5
+Dogtags4
+RealMoneyMaterials/Store
+UICamera
+IAP_PURCHASE_ERROR
+IAP_PURCHASE_NOT_ALLOWED
+IAP_PURCHASE_UNDER_PROCESSING
+REAL_MONEY_MENU_DESCRIPTION_DOG_TAGS
+REAL_MONEY_MENU_DESCRIPTION_COMMAND_POINTS
+REAL_MONEY_MENU_DESCRIPTION_EXP_DOUBLER
+REAL_MONEY_MENU_DESCRIPTION_CP_DOUBLER
+REAL_MONEY_MENU_TOPIC_STARTER_PACK
+REAL_MONEY_MENU_DESCRIPTION_STARTER_PACK
+StarterPackText2
+StarterPackText3
+StarterPackText1
+[#FCC211]
+ [#FEFEFE]
+REAL_MONEY_MENU_DESCRIPTION_UNLOCK
+Medals
+IAP_item
+Current_scene
+Next_level
+IAP_buys
+EXP_doubler
+CP_doubler
+Rookie_pack
+Starter
+Dogtags5
+IAP_PURCHASE_STORE
+IAP_PURCHASE_SUCCESSFUL
+BtnLogic
+empty12
+RESET_QUESTION
+RESET_WARNING
+Unlock 10
+Unlock 20
+Single Missions - Level Select
+not taken
+Twitter state: 
+ Facebook state: 
+Login T
+testiviesti
+Logout
+LoginF
+Fabo it
+Take shot
+faboshot.png
+Fabo fancy
+http://www.kukouri.com/
+Kukouri
+http://www.kukouri.com/images/soldiers_shot_1_s.jpg
+screenshot
+Next Mission
+Cemetary
+, isDead: 
+MoneyAmount
+DogTagsAmount
+Command Points: 
+Dog Tags: 
+Machine Gunner (
+Delta Force (
+DeltaForce
+Medic (
+Extra soldier (
+Magazine (
+Scope (
+Heavy Barrel (
+Light Armor (
+Heavy Armor (
+BootCampTraining (
+not available
+InfantryTraining (
+MarineTraining (
+RangerTraining (
+SpecOpsTraining (
+Buy Points
+MenuRealMoney
+PAUSE_MENU_USED_COUNT
+Paratrooper
+PARATROOPER
+Medipack
+MEDIPACK
+INTELPACK
+GRENADE
+Bazooka
+BAZOOKA
+AirStrike
+AIR_STRIKE
+AirStike
+Zombie1
+INGAME_SHOP_BUY
+INGAME_SHOP_ITEM_TOPIC_DEFAULT
+INGAME_SHOP_ITEM_DESCRIPTION_DEFAULT
+INGAME_SHOP_BAZOOKA_DESCRIPTION
+INGAME_SHOP_GRENADE_DESCRIPTION
+INGAME_SHOP_MEDIPACK_DESCRIPTION
+AIRSTRIKE
+INGAME_SHOP_AIRSTRIKE_DESCRIPTION
+INGAME_SHOP_PARATROOPER_DESCRIPTION
+INTEL_PACK
+INGAME_SHOP_INTEL_PACK_DESCRIPTION
+InGameMaterials/Store
+StoreGrenade
+ZOMBIE_WAVE
+FDKWJIIQO382ASL
+Ranks/transparent
+Ranks/rank1
+Ranks/rank2
+Ranks/rank3
+Ranks/rank4
+Ranks/rank5
+Ranks/rank6
+Ranks/rank7
+Ranks/rank8
+Ranks/rank
+000000
+StoreKitManager
+specialist
+cp1000
+cp5000
+medal7
+medal15
+medal24
+medal50
+easeType
+easeOutBounce
+oncomplete
+TransitionComplete
+PointsBarPos
+CPAmountText
+DTAmountText
+BuyCommandPoints
+PermanentMagazine
+PermanentScope
+PermanentHeavyBarrel
+PermanentLightArmor
+PermanentHeavyArmor
+MedEvac
+BEFORE_GAME_PURCHASE
+BEFORE_GAME_PURCHASE_COUNT_IN_LEVEL
+BEFORE_GAME_PURCHASES_IN_LEVELS_1-5
+BEFORE_GAME_PURCHASES_IN_LEVELS_6-10
+BEFORE_GAME_PURCHASES_IN_LEVELS_11-15
+BEFORE_GAME_PURCHASES_IN_LEVELS_16-20
+BEFORE_GAME_PURCHASES_IN_LEVELS_21-25
+BEFORE_GAME_PURCHASES_IN_LEVELS_26-30
+Before_Game_Purchases
+TRAINING_PURCHASE
+Training_Purchases
+ACHIEVEMENT_DESCRIPTION_
+We got wrong amount of data from SaveSystem
+We got wrong amount of zombiedata from SaveSystem
+com.chillingo.soldiers.ach1
+com.chillingo.soldiers.ach3
+com.chillingo.soldiers.ach19
+com.chillingo.soldiers.ach2
+com.chillingo.soldiers.ach4
+com.chillingo.soldiers.ach20
+com.chillingo.soldiers.ach5
+com.chillingo.soldiers.ach10
+com.chillingo.soldiers.ach11
+com.chillingo.soldiers.ach6
+com.chillingo.soldiers.ach7
+com.chillingo.soldiers.ach8
+com.chillingo.soldiers.ach9
+com.chillingo.soldiers.ach12
+com.chillingo.soldiers.ach13
+com.chillingo.soldiers.ach14
+com.chillingo.soldiers.ach15
+com.chillingo.soldiers.ach16
+com.chillingo.soldiers.ach17
+com.chillingo.soldiers.ach18
+com.chillingo.soldiers.ach21
+com.chillingo.soldiers.ach22
+com.chillingo.soldiers.ach23
+com.chillingo.soldiers.ach24
+com.chillingo.soldiers.ach25
+playerAuthenticated
+playerFailedToAuthenticate: 
+playerLoggedOut
+reportAchievementFinished: 
+HhqBdbZXTFqcLOC1QVDZOA
+rSZr9P6PR_216QSSB7Db6w
+start_2
+WoundedCollider
+NoEntry
+GuiButton
+MenuBackground
+BlockBullet
+ArtilleryAmmo
+TargetBoardCollider
+Languages/Credits
+ file not found.
+CREDITS_
+TextGO
+KILLED_IN_ACTION
+FacebookPoster created
+FacebookPoster destoyed
+noadslicense.dat
+Please, do not copy this file.
+com.chillingo.tinytroopersfree.android.row.removeads
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjOZrkptBS66MkE60RaoRcKzGHKCBVQwDtaHzpvtN4lf+m54ALNya1RNF9Q/BI9+5LZk7es8IbQXE4nsTAWmkYRTXFT9w2BknHLbU/acJy710jX6R2KTruoTpKCFhR62KgbDRR9gAuq8K2YjHnQo3VGMRKfXAUogs804Zxr/JyYkUORuin9FbBo1z8C31D0s8kgH6HkeZL9CiBDCyCDA5BNGOIk2Q9n8UevbMniJ++tU5Hpr1706Cf4WbVMSXEpAamRsnbS6mehiy9L21Y6vXqopqrLjsqR8Sseh4tV65pGUmiUdV6XgDHiUc4ENbDM6WQQrurA9REMlGeus+kZO3PQIDAQAB
+com.chillingo.tinytroopersfree.android.aja.removeads
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnU6ehdDsb2fy7K5L9ygAQ+TKKA2j/tdphUa7TGT17ft+ElSnA1Hi+PegzLDYEYNoI8ZzDYQa99t8A6PzTPGJ3uJeiYILwCxiJUJMK/beAlpuhqLkYrKWSVzoTag89dG3BngfDDpc7i7mNlTKN+En2EipqVHEfuWTDJY0nm8qFTlkV/+QEdmgIRFS2U4hklkMkZj97vHTt2yeIWAYLLXLp+fUnBPlUNDlAHq7zTJ/LBXemDua6TO0t+08T6Owv1trwXStTdiAoPkOcb5z6CnHtNXGRo+DQFGMcMAfY195z+aljvuxwe59Q56L93WtSscevj32u1y0XmrM9fbcu3/LTwIDAQAB
+Valid license file found!
+Cannot purchase product, since another purchase is still going on!
+roskaa
+StoreLoaderAnimation
+com.chillingo.tinytroopersfree.android.row.specialist
+com.chillingo.tinytroopersfree.android.aja.specialist
+com.chillingo.tinytroopersfree.android.row.cp100
+com.chillingo.tinytroopersfree.android.aja.cp100
+com.chillingo.tinytroopersfree.android.row.cp250
+com.chillingo.tinytroopersfree.android.aja.cp250
+com.chillingo.tinytroopersfree.android.row.cp500
+com.chillingo.tinytroopersfree.android.aja.cp500
+com.chillingo.tinytroopersfree.android.row.cp1000
+com.chillingo.tinytroopersfree.android.aja.cp1000
+com.chillingo.tinytroopersfree.android.row.cp5000
+com.chillingo.tinytroopersfree.android.aja.cp5000
+com.chillingo.tinytroopersfree.android.row.medal7
+com.chillingo.tinytroopersfree.android.aja.medal7
+com.chillingo.tinytroopersfree.android.row.medal15
+com.chillingo.tinytroopersfree.android.aja.medal15
+com.chillingo.tinytroopersfree.android.row.medal24
+com.chillingo.tinytroopersfree.android.aja.medal24
+com.chillingo.tinytroopersfree.android.row.medal50
+com.chillingo.tinytroopersfree.android.aja.medal50
+com.chillingo.tinytroopersfree.android.row.cpx2
+com.chillingo.tinytroopersfree.android.aja.cpx2
+com.chillingo.tinytroopersfree.android.row.xpx2
+com.chillingo.tinytroopersfree.android.aja.xpx2
+com.chillingo.tinytroopersfree.android.row.rookie
+com.chillingo.tinytroopersfree.android.aja.rookie
+FAILURE
+billingSupportedEvent: 
+purchaseSignatureVerifiedEvent. signedData: 
+, signature: 
+purchaseSucceededEvent: 
+purchaseCancelledEvent: 
+purchaseRefundedEvent: 
+purchaseFailedEvent: 
+transactionsRestoredEvent
+transactionRestoreFailedEvent: 
+_intro
+MenuMusic(Clone)
+COUNT: 
+loaded
+6gr5uH3mTkN9sM06yYLGw
+yWk50RVNNySCmhYp4wzhMaUIQmRlMY90BbS0JG1s
+logged in
+<REDACTED>
+publish_stream
+Social/TwitterPoster
+access_token
+message
+picture
+caption
+description
+/me/feed
+Social/FacebookPoster
+Twitter login failed: 
+message posted
+Twitter post failed: 
+requestSucceededEvent
+requestFailedEvent. error: 
+Successfully logged in to Facebook
+Facebook login failed: 
+Facebook logged in users name: 
+Facebook failed to receive username: 
+Successfully posted to Facebook
+Facebook post failed: 
+facebokDialogCompleted
+facebookDialogDidntComplete
+facebookDialogFailed: 
+Cannot find '
+TwitterPoster created
+TwitterPoster destoyed
+kill_enemy_infantry
+destroy_all_enemy_buildings
+destroy_all_enemy_vehicles
+kill_target_enemies
+save_the_hostages
+protect_the_journalists
+kill_all_enemies
+survive
+escape
+destroy_missiles
+objectives
+objective_met
+hostages_killed
+journalists_killed
+go_to_extraction
+Notifications/
+/mission_success
+/mission_failed
+intel_found
+wmd_disarmed
+/grenades
+/rockets
+/health
+/dog_tag_collected
+NOTIFICATION_KILL_ENEMY_INFANTRY
+NOTIFICATION_DESTROY_ALL_ENEMY_BUILDINGS
+NOTIFICATION_DESTROY_ALL_ENEMY_VEHICLES
+NOTIFICATION_KILL_TARGET_ENEMIES
+NOTIFICATION_SAVE_THE_HOSTAGES
+NOTIFICATION_PROTECT_THE_JOURNALISTS
+NOTIFICATION_KILL_ALL_ENEMIES
+NOTIFICATION_SURVIVE
+NOTIFICATION_ESCAPE
+NOTIFICATION_DESTROY_MISSILES
+NOTIFICATION_OBJECTIVES
+NOTIFICATION_OBJECTIVE_MET
+NOTIFICATION_HOSTAGES_KILLED
+NOTIFICATION_JOURNALISTS_KILLED
+NOTIFICATION_GO_TO_EXTRACTION
+NOTIFICATION_TUTORIAL_SUCCESS
+NOTIFICATION_MISSION_SUCCESS
+NOTIFICATION_TUTORIAL_FAILED
+NOTIFICATION_MISSION_FAILED
+NOTIFICATION_INTEL_FOUND
+NOTIFICATION_DOG_TAG_FOUND
+NOTIFICATION_WMD_DISARMED
+NOTIFICATION_FROSTY_NEUTRALIZED
+NOTIFICATION_GRENADES
+NOTIFICATION_ROCKETS
+NOTIFICATION_AIR_STRIKES
+NOTIFICATION_HEALTH
+NOTIFICATION_MEDAL_COLLECTED
+ZOMBIE_UNIT_AVAILABLE
+ZOMBIE_AIRDROP_ARRIVED
+Notifications/Popupnotification
+GetItText
+POPUP_NO_CP_
+POPUP_NO_MEDALS_
+POPUP_SPECIALIST_LOCKED_
+POPUP_TRAINING_LOCKED_
+POPUP_REINFORCEMENT_
+POPUP_FREE_COMMAND_POINTS_
+POPUP_FREE_COMMAND_POINTS_NO_INTERNET_
+ANDROID_
+Notifications/PopupnotificationFreeCP
+Notifications/PopupnotificationStore
+ButtonYes
+ButtonNo
+open_gate1
+open_gate2
+IsDead
+ShootingRound
+ShootingCooldown
+KillCount
+FaceId
+fileVersion
+dataVersion
+/dataS
+/dataVersion
+No data save file found.
+No dataS save file found.
+{0}, {1}
+AttackIndicatorParent
+HealthUp
+cheer2
+ShootingTargetSpecial
+SOLDIER_NAMES
+parachute
+paratrooper
+SOLDIER_RANKS
+RaycastColliders
+Destructible Buildings
+Vegetation
+ExplosiveBarrel
+EnemyCollider
+ExplosiveBarrelTouchCollider
+AnimalCollider
+root_bone/pelvis_bone/WoundedHitCollider
+DestructibleFence
+WeaponCollider
+Living:
+, faceId: 
+Active:
+chineseChars.txt
+------------
+Chinese
+Chinese/chinese
+Chinese/chinesematgradient
+Chinese/chinesemat
+English
+French
+German
+Italian
+Spanish
+pool.ntp.org
+Default TextManager
+Languages/
+TextManager, key: 
+ was entered twice!!!
+ doesn't exist!!!
+MovementDust
+KillZone
+tank_turret
+tank_turret_destroyed
+weapon
+technical_turret
+technical_turret_burned
+Particle System
+Ammunition
+Snowman
+BrokenBuilding
+Missiles
+TargetBoard
+EnemyBullet
+SoldierBullet
+soldier
+ButtonMainMenu
+ButtonReplay
+ZOMBIE_SCORE_MESSAGE_HIGH
+ZOMBIE_SCORE_MESSAGE
+ZOMBIE_FACEBOOK_MESSAGE
+ZOMBIE_TWITTER_MESSAGE
+ZombiePauseMenu
+LevelEndMusic
+Notification
+DropIntel
+ParticleCanDestroy
+ZombieAirDropPoint
+ZombieDropPoint
+ZOMBIE_END_POSITION
+Zombie_total_playtime
+Zombie_current_wave
+Level_zombie_GamePlay
+Box001
+ZombieDebriefDialog
+UpdateScores
+CameraPosition
+Enemies

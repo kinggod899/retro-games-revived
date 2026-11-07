@@ -1,0 +1,18 @@
+--------- beginning of crash
+10-20 21:45:43.334 10360 10360 F libc    : Fatal signal 8 (SIGFPE), code -6 (SI_TKILL) in tid 10360 (ree.android.aja), pid 10360 (ree.android.aja)
+10-20 21:45:43.765 10509 10509 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+10-20 21:45:43.765 10509 10509 F DEBUG   : Build fingerprint: 'Xiaomi/aurora/aurora:12/V417IR/2653:user/release-keys'
+10-20 21:45:43.765 10509 10509 F DEBUG   : Revision: '0'
+10-20 21:45:43.765 10509 10509 F DEBUG   : ABI: 'x86'
+10-20 21:45:43.765 10509 10509 F DEBUG   : Timestamp: 2026-10-20 21:45:43.433440054+0800
+10-20 21:45:43.765 10509 10509 F DEBUG   : Process uptime: 5s
+10-20 21:45:43.765 10509 10509 F DEBUG   : Cmdline: com.chillingo.tinytroopersfree.android.aja
+10-20 21:45:43.765 10509 10509 F DEBUG   : pid: 10360, tid: 10360, name: ree.android.aja  >>> com.chillingo.tinytroopersfree.android.aja <<<
+10-20 21:45:43.765 10509 10509 F DEBUG   : uid: 10022
+10-20 21:45:43.765 10509 10509 F DEBUG   : signal 8 (SIGFPE), code -6 (SI_TKILL), fault addr --------
+10-20 21:45:43.765 10509 10509 F DEBUG   :     eax 00000000  ebx 00002878  ecx 00002878  edx 00000008
+10-20 21:45:43.765 10509 10509 F DEBUG   :     edi d7c22e88  esi d79b4ff4
+10-20 21:45:43.765 10509 10509 F DEBUG   :     ebp 00000008  esp ffefe940  eip d7594ee5
+10-20 21:45:43.765 10509 10509 F DEBUG   : backtrace:
+10-20 21:45:43.765 10509 10509 F DEBUG   :       #00 pc d7594ee5  <unknown>
+10-20 21:45:43.765 10509 10509 F DEBUG   :       #01 pc 80000015  <unknown>

@@ -1,0 +1,26 @@
+# Android / native binaries
+*.apk
+*.apks
+*.aab
+*.so
+*.dex
+*.o
+*.a
+
+# Signing material
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+
+# Local machine config
+local.properties
+.gradle/
+.idea/
+*.iml
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini

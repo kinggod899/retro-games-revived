@@ -1,0 +1,1958 @@
+[jhmcp] loading APK: <WORKSPACE>\<QQ_ID>\<QQ_ID>\base.apk (threads=4 resources=full)
+[main] INFO jadx.api.JadxDecompiler - loading ...
+[main] WARN jadx.zip.parser.JadxZipParser - Zip open failed, switching to fallback parser, zip: <WORKSPACE>\AppData\Local\Temp\jadx-temp-5010363542971785195\tmp\plugins-data\java-input\temp13772940568594591290.zip
+java.lang.IllegalArgumentException: newPosition > limit: (504874682 > 2064643)
+	at java.base/java.nio.Buffer.createPositionException(Buffer.java:352)
+	at java.base/java.nio.Buffer.position(Buffer.java:327)
+	at java.base/java.nio.ByteBuffer.position(ByteBuffer.java:1551)
+	at jadx.zip.parser.JadxZipParser.loadFileEntry(JadxZipParser.java:260)
+	at jadx.zip.parser.JadxZipParser.loadCDEntry(JadxZipParser.java:208)
+	at jadx.zip.parser.JadxZipParser.loadFromCentralDirs(JadxZipParser.java:190)
+	at jadx.zip.parser.JadxZipParser.open(JadxZipParser.java:81)
+	at jadx.zip.ZipReader.open(ZipReader.java:50)
+	at jadx.plugins.input.java.JavaInputLoader.collectFromZip(JavaInputLoader.java:128)
+	at jadx.plugins.input.java.JavaInputLoader.loadReaderFromZipEntry(JavaInputLoader.java:112)
+	at jadx.plugins.input.java.JavaInputLoader.collectFromZip(JavaInputLoader.java:141)
+	at jadx.plugins.input.java.JavaInputLoader.loadReader(JavaInputLoader.java:92)
+	at jadx.plugins.input.java.JavaInputLoader.loadFromFile(JavaInputLoader.java:71)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at jadx.plugins.input.java.JavaInputLoader.collectFiles(JavaInputLoader.java:58)
+	at jadx.plugins.input.java.JavaInputPlugin.lambda$init$0(JavaInputPlugin.java:30)
+	at jadx.api.JadxDecompiler.loadInputFiles(JadxDecompiler.java:166)
+	at jadx.api.JadxDecompiler.load(JadxDecompiler.java:125)
+	at com.atxx.jhmcp.JadxSession$Companion.open(JadxSession.kt:677)
+	at com.atxx.jhmcp.SessionHolder.load(SessionHolder.kt:26)
+	at com.atxx.jhmcp.SessionHolder.load$default(SessionHolder.kt:22)
+	at com.atxx.jhmcp.MainKt$main$2.invokeSuspend(Main.kt:249)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)
+	at com.atxx.jhmcp.MainKt.main(Main.kt:248)
+[main] ERROR jadx.plugins.input.java.JavaInputLoader - Failed to read zip entry: jadx.zip.fallback.FallbackZipEntry@6fb0d3ed
+java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:935)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:946)
+	at java.base/java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:463)
+	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:175)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at jadx.zip.io.LimitedInputStream.read(LimitedInputStream.java:37)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at jadx.plugins.input.java.JavaInputLoader.loadReader(JavaInputLoader.java:81)
+	at jadx.plugins.input.java.JavaInputLoader.collectFromZip(JavaInputLoader.java:143)
+	at jadx.plugins.input.java.JavaInputLoader.loadReaderFromZipEntry(JavaInputLoader.java:112)
+	at jadx.plugins.input.java.JavaInputLoader.collectFromZip(JavaInputLoader.java:141)
+	at jadx.plugins.input.java.JavaInputLoader.loadReader(JavaInputLoader.java:92)
+	at jadx.plugins.input.java.JavaInputLoader.loadFromFile(JavaInputLoader.java:71)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at jadx.plugins.input.java.JavaInputLoader.collectFiles(JavaInputLoader.java:58)
+	at jadx.plugins.input.java.JavaInputPlugin.lambda$init$0(JavaInputPlugin.java:30)
+	at jadx.api.JadxDecompiler.loadInputFiles(JadxDecompiler.java:166)
+	at jadx.api.JadxDecompiler.load(JadxDecompiler.java:125)
+	at com.atxx.jhmcp.JadxSession$Companion.open(JadxSession.kt:677)
+	at com.atxx.jhmcp.SessionHolder.load(SessionHolder.kt:26)
+	at com.atxx.jhmcp.SessionHolder.load$default(SessionHolder.kt:22)
+	at com.atxx.jhmcp.MainKt$main$2.invokeSuspend(Main.kt:249)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)
+	at com.atxx.jhmcp.MainKt.main(Main.kt:248)
+[main] ERROR jadx.plugins.input.java.JavaInputLoader - Failed to read zip entry: jadx.zip.fallback.FallbackZipEntry@52525845
+java.util.zip.ZipException: ZipFile invalid LOC header (bad signature)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.initDataOffset(ZipFile.java:935)
+	at java.base/java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:946)
+	at java.base/java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:463)
+	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:175)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at jadx.zip.io.LimitedInputStream.read(LimitedInputStream.java:37)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:95)
+	at jadx.plugins.input.java.JavaInputLoader.loadReader(JavaInputLoader.java:81)
+	at jadx.plugins.input.java.JavaInputLoader.collectFromZip(JavaInputLoader.java:143)
+	at jadx.plugins.input.java.JavaInputLoader.loadReaderFromZipEntry(JavaInputLoader.java:112)
+	at jadx.plugins.input.java.JavaInputLoader.collectFromZip(JavaInputLoader.java:141)
+	at jadx.plugins.input.java.JavaInputLoader.loadReader(JavaInputLoader.java:92)
+	at jadx.plugins.input.java.JavaInputLoader.loadFromFile(JavaInputLoader.java:71)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at jadx.plugins.input.java.JavaInputLoader.collectFiles(JavaInputLoader.java:58)
+	at jadx.plugins.input.java.JavaInputPlugin.lambda$init$0(JavaInputPlugin.java:30)
+	at jadx.api.JadxDecompiler.loadInputFiles(JadxDecompiler.java:166)
+	at jadx.api.JadxDecompiler.load(JadxDecompiler.java:125)
+	at com.atxx.jhmcp.JadxSession$Companion.open(JadxSession.kt:677)
+	at com.atxx.jhmcp.SessionHolder.load(SessionHolder.kt:26)
+	at com.atxx.jhmcp.SessionHolder.load$default(SessionHolder.kt:22)
+	at com.atxx.jhmcp.MainKt$main$2.invokeSuspend(Main.kt:249)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)
+	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)
+	at com.atxx.jhmcp.MainKt.main(Main.kt:248)
+[main] INFO jadx.core.utils.android.AndroidResourcesUtils - Found several 'R' class candidates: [com.millennialmedia.android.R, com.vdopia.client.android.R]
+[main] INFO jadx.core.utils.android.AndroidResourcesUtils - App 'R' class not found, put all resources ids into : 'com.chillingo.tinytroopersfree.android.aja.R'
+[main] INFO jadx.core.dex.nodes.RootNode - Loaded classes: 2267, methods: 17943, instructions: 512676
+[jhmcp] loaded in 8978ms, classes=1321
+[jhmcp] Streamable-HTTP MCP endpoint: http://<DEVICE_ID>/mcp (dns-rebinding-protection=true)
+[main] INFO io.ktor.server.Application - Autoreload is disabled because the development mode is off.
+kotlin-logging: initializing... active logger factory: Slf4jLoggerFactory
+[main] INFO io.ktor.server.Application - Application started in 2.238 seconds.
+[DefaultDispatcher-worker-3] INFO io.ktor.server.Application - Responding at http://<DEVICE_ID>
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-6] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-6] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: d9ec5689-c788-4df0-89d9-6aa76df2bf5e
+[DefaultDispatcher-worker-6] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: d9ec5689-c788-4df0-89d9-6aa76df2bf5e
+[DefaultDispatcher-worker-6] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792522291204 for sessionId: d9ec5689-c788-4df0-89d9-6aa76df2bf5e 
+[DefaultDispatcher-worker-6] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: d9ec5689-c788-4df0-89d9-6aa76df2bf5e
+[DefaultDispatcher-worker-6] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: a627f1df-cbef-413c-ac2b-f536b86df321
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-2] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-2] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-2] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: bb730f65-f898-4b80-93a7-e268d7db40af
+[DefaultDispatcher-worker-2] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: bb730f65-f898-4b80-93a7-e268d7db40af
+[DefaultDispatcher-worker-2] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792522315954 for sessionId: bb730f65-f898-4b80-93a7-e268d7db40af 
+[DefaultDispatcher-worker-2] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: bb730f65-f898-4b80-93a7-e268d7db40af
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 84b1074c-5fa6-46f3-bef3-85e54794713c
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 84b1074c-5fa6-46f3-bef3-85e54794713c
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792558987138 for sessionId: 84b1074c-5fa6-46f3-bef3-85e54794713c 
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 84b1074c-5fa6-46f3-bef3-85e54794713c
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: b953c176-409a-444f-b17f-dbc89a256246
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: f6cfc82d-7b45-4141-8514-98aa45188834
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: f6cfc82d-7b45-4141-8514-98aa45188834
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559001713 for sessionId: f6cfc82d-7b45-4141-8514-98aa45188834 
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: f6cfc82d-7b45-4141-8514-98aa45188834
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 45ef4369-b170-4252-9c27-63f2a1589be8
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 45ef4369-b170-4252-9c27-63f2a1589be8
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559020302 for sessionId: 45ef4369-b170-4252-9c27-63f2a1589be8 
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 45ef4369-b170-4252-9c27-63f2a1589be8
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 92140034-299f-438c-a27b-2cb44434ebd4
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 92140034-299f-438c-a27b-2cb44434ebd4
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559020381 for sessionId: 92140034-299f-438c-a27b-2cb44434ebd4 
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 92140034-299f-438c-a27b-2cb44434ebd4
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-5] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 01ae4902-b72f-4e7f-8c89-eba56a236c5e
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 01ae4902-b72f-4e7f-8c89-eba56a236c5e
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559038098 for sessionId: 01ae4902-b72f-4e7f-8c89-eba56a236c5e 
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 01ae4902-b72f-4e7f-8c89-eba56a236c5e
+[DefaultDispatcher-worker-5] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: 7bd3dbf1-8973-43a8-8d5a-f3e5034029ab
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 70ee301f-ae9b-4515-b0fe-5e53c26d98d5
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 70ee301f-ae9b-4515-b0fe-5e53c26d98d5
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559058131 for sessionId: 70ee301f-ae9b-4515-b0fe-5e53c26d98d5 
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 70ee301f-ae9b-4515-b0fe-5e53c26d98d5
+[DefaultDispatcher-worker-12] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: 34502a29-5e74-428d-8e0f-22506893da34
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 2407ffa2-9f1d-440b-bacb-93a00b1c4a0d
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 2407ffa2-9f1d-440b-bacb-93a00b1c4a0d
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559080405 for sessionId: 2407ffa2-9f1d-440b-bacb-93a00b1c4a0d 
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 2407ffa2-9f1d-440b-bacb-93a00b1c4a0d
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: 91000ee5-35dc-44a2-8f65-8fa0ae2fbd38
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Getting Tool: "status"
+[DefaultDispatcher-worker-6] INFO FeatureRegistry[Tool] - Got Tool: "status"
+[DefaultDispatcher-worker-16] INFO FeatureRegistry[Tool] - Getting Tool: "get_app_info"
+[DefaultDispatcher-worker-16] INFO FeatureRegistry[Tool] - Got Tool: "get_app_info"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-11] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-11] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-11] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 12a15c46-24fe-4f0d-92cb-fe1c49e5c299
+[DefaultDispatcher-worker-11] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 12a15c46-24fe-4f0d-92cb-fe1c49e5c299
+[DefaultDispatcher-worker-11] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559360181 for sessionId: 12a15c46-24fe-4f0d-92cb-fe1c49e5c299 
+[DefaultDispatcher-worker-11] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 12a15c46-24fe-4f0d-92cb-fe1c49e5c299
+[DefaultDispatcher-worker-11] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: 0ced35d4-551d-49df-80b3-d006b7cb1b35
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Getting Tool: "list_classes"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Got Tool: "list_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-9] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: 7c6b7c96-57f3-466b-b146-f68bca6bb1fc
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: 7c6b7c96-57f3-466b-b146-f68bca6bb1fc
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559400521 for sessionId: 7c6b7c96-57f3-466b-b146-f68bca6bb1fc 
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: 7c6b7c96-57f3-466b-b146-f68bca6bb1fc
+[DefaultDispatcher-worker-9] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: a756c8ec-3d3d-4f14-bb1c-8e3c52be15e1
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Getting Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-12] INFO FeatureRegistry[Tool] - Got Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "status"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "status"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "load_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "load_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "unload_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "unload_apk"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_app_info"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_app_info"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_android_manifest"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_android_manifest"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_main_activity_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "list_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "list_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_main_application_classes_names"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_source"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_class_source"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_class_summary"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_class_summary"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_smali_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_fields_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_inner_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_inner_classes"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "resolve_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "resolve_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_methods_of_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_body"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_method_body"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_method_smali"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_method_smali"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "search_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "search_method_by_name"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "search_classes_by_keyword"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_class"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_method"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_xrefs_to_field"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_strings"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_strings"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "list_resource_files"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "list_resource_files"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Adding Tool: "get_resource_file"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Added Tool: "get_resource_file"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Notifying listeners on feature update
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.shared.Protocol - Starting transport
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.ServerSessionRegistry - Adding session: e4615892-0801-497b-bfe5-eee477d9e24a
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribing session for notifications sessionId: e4615892-0801-497b-bfe5-eee477d9e24a
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.SessionNotificationJob - Starting notification job from timestamp 1792559424131 for sessionId: e4615892-0801-497b-bfe5-eee477d9e24a 
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.FeatureNotificationService - Subscribed session for notifications sessionId: e4615892-0801-497b-bfe5-eee477d9e24a
+[DefaultDispatcher-worker-8] INFO io.modelcontextprotocol.kotlin.sdk.server.KtorServer - New StreamableHttp connection established and stored with sessionId: c4856945-ef10-4377-8aec-5c5823ebd70c
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Getting Tool: "get_class_summary"
+[DefaultDispatcher-worker-8] INFO FeatureRegistry[Tool] - Got Tool: "get_class_summary"
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.regions.LoopRegionVisitor - Generic type differs: 'java.util.Map$Entry<K extends java.lang.Enum<K>, ?>' and 'java.util.Map$Entry<? extends java.lang.Enum<?>, ?>' in org.codehaus.jackson.map.ser.std.EnumMapSerializer.serializeContents(java.util.EnumMap<? extends java.lang.Enum<?>, ?>, org.codehaus.jackson.JsonGenerator, org.codehaus.jackson.map.SerializerProvider):void
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.regions.LoopRegionVisitor - Generic type differs: 'java.util.Map$Entry<K extends java.lang.Enum<K>, ?>' and 'java.util.Map$Entry<? extends java.lang.Enum<?>, ?>' in org.codehaus.jackson.map.ser.std.EnumMapSerializer.serializeContentsUsing(java.util.EnumMap<? extends java.lang.Enum<?>, ?>, org.codehaus.jackson.JsonGenerator, org.codehaus.jackson.map.SerializerProvider, org.codehaus.jackson.map.JsonSerializer<java.lang.Object>):void
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - Type inference failed in method: org.codehaus.jackson.map.ser.StdSerializerProvider._handleContextualResolvable(org.codehaus.jackson.map.JsonSerializer<java.lang.Object>, org.codehaus.jackson.map.BeanProperty):org.codehaus.jackson.map.JsonSerializer<java.lang.Object>, file: classes.dex, details: Type inference error: updates count limit reached with updateSeq = 301. Try increasing type updates limit count.
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.typeinference.TypeUpdate - Can't compare types, unknown hierarchy: org.joda.time.DateMidnight and org.joda.time.ReadableInstant
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.typeinference.TypeUpdate - Can't compare types, unknown hierarchy: org.joda.time.LocalDate and org.joda.time.ReadablePartial
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.typeinference.TypeUpdate - Can't compare types, unknown hierarchy: org.joda.time.LocalDateTime and org.joda.time.ReadablePartial
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.typeinference.TypeUpdate - Can't compare types, unknown hierarchy: org.joda.time.DateTime and T extends org.joda.time.ReadableInstant
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.typeinference.TypeUpdate - Can't compare types, unknown hierarchy: org.joda.time.DateTime and T extends org.joda.time.ReadableInstant
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.typeinference.TypeUpdate - Can't compare types, unknown hierarchy: org.joda.time.Period and org.joda.time.ReadablePeriod
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.visitors.typeinference.TypeUpdate - Can't compare types, unknown hierarchy: org.joda.time.Period and org.joda.time.ReadablePeriod
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:24:0x0015, code lost:
+
+    r5 = r4;
+ in method: org.codehaus.jackson.impl.Utf8StreamParser._skipString():void, file: classes.dex
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - JadxRuntimeException in pass: InitCodeVariables in method: org.codehaus.jackson.impl.ReaderBasedParser._handleInvalidNumberStart(int, boolean):org.codehaus.jackson.JsonToken, file: classes.dex
+jadx.core.utils.exceptions.JadxRuntimeException: Several immutable types in one variable: [int, char], vars: [r10v0 ??, r10v1 ??, r10v2 ??]
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVarType(InitCodeVariables.java:107)
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVar(InitCodeVariables.java:83)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:74)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:57)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVars(InitCodeVariables.java:45)
+	at jadx.core.dex.visitors.InitCodeVariables.visit(InitCodeVariables.java:29)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:25)
+	at jadx.core.dex.visitors.DepthTraversal.lambda$visit$1(DepthTraversal.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:13)
+	at jadx.core.ProcessClass.process(ProcessClass.java:83)
+	at jadx.core.ProcessClass.generateCode(ProcessClass.java:127)
+	at jadx.core.dex.nodes.ClassNode.generateClassCode(ClassNode.java:405)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:393)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:311)
+	at jadx.api.JavaClass.load(JavaClass.java:142)
+	at jadx.api.JavaClass.getInnerClasses(JavaClass.java:316)
+	at com.atxx.jhmcp.JadxSession.allClasses_delegate$lambda$0(JadxSession.kt:99)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getAllClasses(JadxSession.kt:93)
+	at com.atxx.jhmcp.JadxSession.classByFqn_delegate$lambda$0(JadxSession.kt:106)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getClassByFqn(JadxSession.kt:105)
+	at com.atxx.jhmcp.JadxSession.resolveClassDetailed(JadxSession.kt:154)
+	at com.atxx.jhmcp.ToolSupportKt.resolveClassArg(ToolSupport.kt:139)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invokeSuspend(ClassTools.kt:112)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.handleCallTool(Server.kt:658)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.access$handleCallTool(Server.kt:110)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invokeSuspend(Server.kt:225)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invokeSuspend(Protocol.kt:954)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invokeSuspend(Protocol.kt:614)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatched(Undispatched.kt:66)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:43)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:497)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.onRequest(Protocol.kt:612)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.dispatchRequest(Protocol.kt:455)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.access$dispatchRequest(Protocol.kt:239)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invokeSuspend(Protocol.kt:412)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invokeSuspend(AbstractTransport.kt:54)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handlePostRequest(StreamableHttpServerTransport.kt:552)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handleRequest(StreamableHttpServerTransport.kt:414)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invokeSuspend(KtorServer.kt:203)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invokeSuspend(RoutingNode.kt:127)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.routing.RoutingRoot.executeResult(RoutingRoot.kt:220)
+	at io.ktor.server.routing.RoutingRoot.interceptor(RoutingRoot.kt:73)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invokeSuspend(RoutingRoot.kt:164)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:152)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invokeSuspend(BaseApplicationResponse.kt:351)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2.invokeSuspend(CIOApplicationEngine.kt:267)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - JadxRuntimeException in pass: InitCodeVariables in method: org.codehaus.jackson.impl.ReaderBasedParser.parseNumberText(int):org.codehaus.jackson.JsonToken, file: classes.dex
+jadx.core.utils.exceptions.JadxRuntimeException: Several immutable types in one variable: [int, char], vars: [r15v0 ??, r15v1 ??, r15v10 ??]
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVarType(InitCodeVariables.java:107)
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVar(InitCodeVariables.java:83)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:74)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:57)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVars(InitCodeVariables.java:45)
+	at jadx.core.dex.visitors.InitCodeVariables.visit(InitCodeVariables.java:29)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:25)
+	at jadx.core.dex.visitors.DepthTraversal.lambda$visit$1(DepthTraversal.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:13)
+	at jadx.core.ProcessClass.process(ProcessClass.java:83)
+	at jadx.core.ProcessClass.generateCode(ProcessClass.java:127)
+	at jadx.core.dex.nodes.ClassNode.generateClassCode(ClassNode.java:405)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:393)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:311)
+	at jadx.api.JavaClass.load(JavaClass.java:142)
+	at jadx.api.JavaClass.getInnerClasses(JavaClass.java:316)
+	at com.atxx.jhmcp.JadxSession.allClasses_delegate$lambda$0(JadxSession.kt:99)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getAllClasses(JadxSession.kt:93)
+	at com.atxx.jhmcp.JadxSession.classByFqn_delegate$lambda$0(JadxSession.kt:106)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getClassByFqn(JadxSession.kt:105)
+	at com.atxx.jhmcp.JadxSession.resolveClassDetailed(JadxSession.kt:154)
+	at com.atxx.jhmcp.ToolSupportKt.resolveClassArg(ToolSupport.kt:139)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invokeSuspend(ClassTools.kt:112)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.handleCallTool(Server.kt:658)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.access$handleCallTool(Server.kt:110)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invokeSuspend(Server.kt:225)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invokeSuspend(Protocol.kt:954)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invokeSuspend(Protocol.kt:614)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatched(Undispatched.kt:66)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:43)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:497)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.onRequest(Protocol.kt:612)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.dispatchRequest(Protocol.kt:455)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.access$dispatchRequest(Protocol.kt:239)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invokeSuspend(Protocol.kt:412)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invokeSuspend(AbstractTransport.kt:54)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handlePostRequest(StreamableHttpServerTransport.kt:552)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handleRequest(StreamableHttpServerTransport.kt:414)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invokeSuspend(KtorServer.kt:203)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invokeSuspend(RoutingNode.kt:127)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.routing.RoutingRoot.executeResult(RoutingRoot.kt:220)
+	at io.ktor.server.routing.RoutingRoot.interceptor(RoutingRoot.kt:73)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invokeSuspend(RoutingRoot.kt:164)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:152)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invokeSuspend(BaseApplicationResponse.kt:351)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2.invokeSuspend(CIOApplicationEngine.kt:267)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - Method generation error in method: org.codehaus.jackson.impl.ReaderBasedParser.parseNumberText(int):org.codehaus.jackson.JsonToken, file: classes.dex
+jadx.core.utils.exceptions.JadxRuntimeException: Code variable not set in r15v0 ??
+	at jadx.core.dex.instructions.args.SSAVar.getCodeVar(SSAVar.java:236)
+	at jadx.core.codegen.MethodGen.addMethodArguments(MethodGen.java:215)
+	at jadx.core.codegen.MethodGen.addDefinition(MethodGen.java:150)
+	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:415)
+	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:345)
+	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:299)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:295)
+	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:284)
+	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:268)
+	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:160)
+	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:104)
+	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
+	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
+	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
+	at jadx.core.ProcessClass.process(ProcessClass.java:89)
+	at jadx.core.ProcessClass.generateCode(ProcessClass.java:127)
+	at jadx.core.dex.nodes.ClassNode.generateClassCode(ClassNode.java:405)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:393)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:311)
+	at jadx.api.JavaClass.load(JavaClass.java:142)
+	at jadx.api.JavaClass.getInnerClasses(JavaClass.java:316)
+	at com.atxx.jhmcp.JadxSession.allClasses_delegate$lambda$0(JadxSession.kt:99)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getAllClasses(JadxSession.kt:93)
+	at com.atxx.jhmcp.JadxSession.classByFqn_delegate$lambda$0(JadxSession.kt:106)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getClassByFqn(JadxSession.kt:105)
+	at com.atxx.jhmcp.JadxSession.resolveClassDetailed(JadxSession.kt:154)
+	at com.atxx.jhmcp.ToolSupportKt.resolveClassArg(ToolSupport.kt:139)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invokeSuspend(ClassTools.kt:112)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.handleCallTool(Server.kt:658)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.access$handleCallTool(Server.kt:110)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invokeSuspend(Server.kt:225)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invokeSuspend(Protocol.kt:954)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invokeSuspend(Protocol.kt:614)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatched(Undispatched.kt:66)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:43)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:497)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.onRequest(Protocol.kt:612)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.dispatchRequest(Protocol.kt:455)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.access$dispatchRequest(Protocol.kt:239)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invokeSuspend(Protocol.kt:412)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invokeSuspend(AbstractTransport.kt:54)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handlePostRequest(StreamableHttpServerTransport.kt:552)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handleRequest(StreamableHttpServerTransport.kt:414)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invokeSuspend(KtorServer.kt:203)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invokeSuspend(RoutingNode.kt:127)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.routing.RoutingRoot.executeResult(RoutingRoot.kt:220)
+	at io.ktor.server.routing.RoutingRoot.interceptor(RoutingRoot.kt:73)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invokeSuspend(RoutingRoot.kt:164)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:152)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invokeSuspend(BaseApplicationResponse.kt:351)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2.invokeSuspend(CIOApplicationEngine.kt:267)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - Method generation error in method: org.codehaus.jackson.impl.ReaderBasedParser._handleInvalidNumberStart(int, boolean):org.codehaus.jackson.JsonToken, file: classes.dex
+jadx.core.utils.exceptions.JadxRuntimeException: Code variable not set in r10v0 ??
+	at jadx.core.dex.instructions.args.SSAVar.getCodeVar(SSAVar.java:236)
+	at jadx.core.codegen.MethodGen.addMethodArguments(MethodGen.java:215)
+	at jadx.core.codegen.MethodGen.addDefinition(MethodGen.java:150)
+	at jadx.core.codegen.ClassGen.addMethodCode(ClassGen.java:415)
+	at jadx.core.codegen.ClassGen.addMethod(ClassGen.java:345)
+	at jadx.core.codegen.ClassGen.lambda$addInnerClsAndMethods$3(ClassGen.java:299)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+	at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at jadx.core.codegen.ClassGen.addInnerClsAndMethods(ClassGen.java:295)
+	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:284)
+	at jadx.core.codegen.ClassGen.addClassBody(ClassGen.java:268)
+	at jadx.core.codegen.ClassGen.addClassCode(ClassGen.java:160)
+	at jadx.core.codegen.ClassGen.makeClass(ClassGen.java:104)
+	at jadx.core.codegen.CodeGen.wrapCodeGen(CodeGen.java:45)
+	at jadx.core.codegen.CodeGen.generateJavaCode(CodeGen.java:34)
+	at jadx.core.codegen.CodeGen.generate(CodeGen.java:22)
+	at jadx.core.ProcessClass.process(ProcessClass.java:89)
+	at jadx.core.ProcessClass.generateCode(ProcessClass.java:127)
+	at jadx.core.dex.nodes.ClassNode.generateClassCode(ClassNode.java:405)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:393)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:311)
+	at jadx.api.JavaClass.load(JavaClass.java:142)
+	at jadx.api.JavaClass.getInnerClasses(JavaClass.java:316)
+	at com.atxx.jhmcp.JadxSession.allClasses_delegate$lambda$0(JadxSession.kt:99)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getAllClasses(JadxSession.kt:93)
+	at com.atxx.jhmcp.JadxSession.classByFqn_delegate$lambda$0(JadxSession.kt:106)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getClassByFqn(JadxSession.kt:105)
+	at com.atxx.jhmcp.JadxSession.resolveClassDetailed(JadxSession.kt:154)
+	at com.atxx.jhmcp.ToolSupportKt.resolveClassArg(ToolSupport.kt:139)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invokeSuspend(ClassTools.kt:112)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.handleCallTool(Server.kt:658)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.access$handleCallTool(Server.kt:110)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invokeSuspend(Server.kt:225)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invokeSuspend(Protocol.kt:954)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invokeSuspend(Protocol.kt:614)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatched(Undispatched.kt:66)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:43)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:497)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.onRequest(Protocol.kt:612)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.dispatchRequest(Protocol.kt:455)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.access$dispatchRequest(Protocol.kt:239)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invokeSuspend(Protocol.kt:412)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invokeSuspend(AbstractTransport.kt:54)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handlePostRequest(StreamableHttpServerTransport.kt:552)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handleRequest(StreamableHttpServerTransport.kt:414)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invokeSuspend(KtorServer.kt:203)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invokeSuspend(RoutingNode.kt:127)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.routing.RoutingRoot.executeResult(RoutingRoot.kt:220)
+	at io.ktor.server.routing.RoutingRoot.interceptor(RoutingRoot.kt:73)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invokeSuspend(RoutingRoot.kt:164)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:152)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invokeSuspend(BaseApplicationResponse.kt:351)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2.invokeSuspend(CIOApplicationEngine.kt:267)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - JadxRuntimeException in pass: InitCodeVariables in method: org.codehaus.jackson.impl.ReaderBasedParser._handleInvalidNumberStart(int, boolean):org.codehaus.jackson.JsonToken, file: classes.dex
+jadx.core.utils.exceptions.JadxRuntimeException: Several immutable types in one variable: [int, char], vars: [r10v0 ??, r10v1 ??, r10v2 ??]
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVarType(InitCodeVariables.java:107)
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVar(InitCodeVariables.java:83)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:74)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:57)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVars(InitCodeVariables.java:45)
+	at jadx.core.dex.visitors.InitCodeVariables.visit(InitCodeVariables.java:29)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:25)
+	at jadx.core.dex.visitors.DepthTraversal.lambda$visit$1(DepthTraversal.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:13)
+	at jadx.core.ProcessClass.process(ProcessClass.java:83)
+	at jadx.core.ProcessClass.generateCode(ProcessClass.java:119)
+	at jadx.core.dex.nodes.ClassNode.generateClassCode(ClassNode.java:405)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:393)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:311)
+	at jadx.api.JavaClass.load(JavaClass.java:142)
+	at jadx.api.JavaClass.getInnerClasses(JavaClass.java:316)
+	at com.atxx.jhmcp.JadxSession.allClasses_delegate$lambda$0(JadxSession.kt:99)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getAllClasses(JadxSession.kt:93)
+	at com.atxx.jhmcp.JadxSession.classByFqn_delegate$lambda$0(JadxSession.kt:106)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getClassByFqn(JadxSession.kt:105)
+	at com.atxx.jhmcp.JadxSession.resolveClassDetailed(JadxSession.kt:154)
+	at com.atxx.jhmcp.ToolSupportKt.resolveClassArg(ToolSupport.kt:139)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invokeSuspend(ClassTools.kt:112)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.handleCallTool(Server.kt:658)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.access$handleCallTool(Server.kt:110)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invokeSuspend(Server.kt:225)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invokeSuspend(Protocol.kt:954)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invokeSuspend(Protocol.kt:614)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatched(Undispatched.kt:66)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:43)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:497)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.onRequest(Protocol.kt:612)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.dispatchRequest(Protocol.kt:455)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.access$dispatchRequest(Protocol.kt:239)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invokeSuspend(Protocol.kt:412)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invokeSuspend(AbstractTransport.kt:54)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handlePostRequest(StreamableHttpServerTransport.kt:552)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handleRequest(StreamableHttpServerTransport.kt:414)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invokeSuspend(KtorServer.kt:203)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invokeSuspend(RoutingNode.kt:127)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.routing.RoutingRoot.executeResult(RoutingRoot.kt:220)
+	at io.ktor.server.routing.RoutingRoot.interceptor(RoutingRoot.kt:73)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invokeSuspend(RoutingRoot.kt:164)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:152)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invokeSuspend(BaseApplicationResponse.kt:351)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2.invokeSuspend(CIOApplicationEngine.kt:267)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - JadxRuntimeException in pass: InitCodeVariables in method: org.codehaus.jackson.impl.ReaderBasedParser.parseNumberText(int):org.codehaus.jackson.JsonToken, file: classes.dex
+jadx.core.utils.exceptions.JadxRuntimeException: Several immutable types in one variable: [int, char], vars: [r15v0 ??, r15v1 ??, r15v10 ??]
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVarType(InitCodeVariables.java:107)
+	at jadx.core.dex.visitors.InitCodeVariables.setCodeVar(InitCodeVariables.java:83)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:74)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVar(InitCodeVariables.java:57)
+	at jadx.core.dex.visitors.InitCodeVariables.initCodeVars(InitCodeVariables.java:45)
+	at jadx.core.dex.visitors.InitCodeVariables.visit(InitCodeVariables.java:29)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:25)
+	at jadx.core.dex.visitors.DepthTraversal.lambda$visit$1(DepthTraversal.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at jadx.core.dex.visitors.DepthTraversal.visit(DepthTraversal.java:13)
+	at jadx.core.ProcessClass.process(ProcessClass.java:83)
+	at jadx.core.ProcessClass.generateCode(ProcessClass.java:119)
+	at jadx.core.dex.nodes.ClassNode.generateClassCode(ClassNode.java:405)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:393)
+	at jadx.core.dex.nodes.ClassNode.decompile(ClassNode.java:311)
+	at jadx.api.JavaClass.load(JavaClass.java:142)
+	at jadx.api.JavaClass.getInnerClasses(JavaClass.java:316)
+	at com.atxx.jhmcp.JadxSession.allClasses_delegate$lambda$0(JadxSession.kt:99)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getAllClasses(JadxSession.kt:93)
+	at com.atxx.jhmcp.JadxSession.classByFqn_delegate$lambda$0(JadxSession.kt:106)
+	at kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)
+	at com.atxx.jhmcp.JadxSession.getClassByFqn(JadxSession.kt:105)
+	at com.atxx.jhmcp.JadxSession.resolveClassDetailed(JadxSession.kt:154)
+	at com.atxx.jhmcp.ToolSupportKt.resolveClassArg(ToolSupport.kt:139)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invokeSuspend(ClassTools.kt:112)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at com.atxx.jhmcp.ClassToolsKt$registerClassTools$8.invoke(ClassTools.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.handleCallTool(Server.kt:658)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server.access$handleCallTool(Server.kt:110)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invokeSuspend(Server.kt:225)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.Server$createSession$3.invoke(Server.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invokeSuspend(Protocol.kt:954)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$setRequestHandlerInternal$1$1.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invokeSuspend(Protocol.kt:614)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$onRequest$5.invoke(Protocol.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatched(Undispatched.kt:66)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:43)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:497)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.onRequest(Protocol.kt:612)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.dispatchRequest(Protocol.kt:455)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol.access$dispatchRequest(Protocol.kt:239)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invokeSuspend(Protocol.kt:412)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.Protocol$connect$8.invoke(Protocol.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invokeSuspend(AbstractTransport.kt:54)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.shared.AbstractTransport$onMessage$1.invoke(AbstractTransport.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handlePostRequest(StreamableHttpServerTransport.kt:552)
+	at io.modelcontextprotocol.kotlin.sdk.server.StreamableHttpServerTransport.handleRequest(StreamableHttpServerTransport.kt:414)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invokeSuspend(KtorServer.kt:203)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.modelcontextprotocol.kotlin.sdk.server.KtorServerKt$mcpStreamableHttp$1$1$3.invoke(KtorServer.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invokeSuspend(RoutingNode.kt:127)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.server.routing.RoutingNode$buildPipeline$1$1.invoke(RoutingNode.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.routing.RoutingRoot$executeResult$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.routing.RoutingRoot.executeResult(RoutingRoot.kt:220)
+	at io.ktor.server.routing.RoutingRoot.interceptor(RoutingRoot.kt:73)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invokeSuspend(RoutingRoot.kt:164)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.server.routing.RoutingRoot$Plugin$install$1.invoke(RoutingRoot.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invokeSuspend(DefaultEnginePipeline.kt:152)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.server.engine.DefaultEnginePipelineKt$defaultEnginePipeline$1.invoke(DefaultEnginePipeline.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invokeSuspend(BaseApplicationResponse.kt:351)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.server.engine.BaseApplicationResponse$Companion$setupFallbackResponse$1.invoke(BaseApplicationResponse.kt)
+	at io.ktor.util.pipeline.PipelineJvmKt.pipelineStartCoroutineUninterceptedOrReturn(PipelineJvm.kt:15)
+	at io.ktor.util.pipeline.SuspendFunctionGun.loop(SuspendFunctionGun.kt:168)
+	at io.ktor.util.pipeline.SuspendFunctionGun.proceed(SuspendFunctionGun.kt:120)
+	at io.ktor.util.pipeline.SuspendFunctionGun.execute$ktor_utils(SuspendFunctionGun.kt:139)
+	at io.ktor.util.pipeline.Pipeline.execute(Pipeline.kt:92)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invokeSuspend(Pipeline.kt:510)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2$invokeSuspend$$inlined$execute$1.invoke(Pipeline.kt)
+	at io.ktor.util.debug.ContextUtilsKt.initContextInDebugMode(ContextUtils.kt:19)
+	at io.ktor.server.cio.CIOApplicationEngine$handleRequest$2.invokeSuspend(CIOApplicationEngine.kt:267)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:24:0x0015, code lost:
+
+    r5 = r4;
+ in method: org.codehaus.jackson.impl.Utf8StreamParser._skipString():void, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:16:0x0013, code lost:
+
+    r0 = "Unknown";
+ in method: com.flurry.android.FlurryAgent.c(android.content.Context):java.lang.String, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:22:0x0045, code lost:
+
+    r6 = false;
+ in method: com.millennialmedia.android.MMAdViewController.freeMemoryOnDisk(com.millennialmedia.android.MMAdView):boolean, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.e.b(java.io.File):java.lang.String
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.e.b(java.io.File):java.lang.String
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.d.c(android.content.Context):int
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.d.d(android.content.Context):int
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.d.a(int):void
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.d.c():void
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.d.e(android.content.Context):java.lang.String
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.b.d.f(android.content.Context):java.lang.String
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Bottom block not found for handler: Throwable -> 0x0054 in method: com.kuaiyouxi.gamepad.sdk.shell.a.b.run():void, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:44:?, code lost:
+
+    return;
+ in method: com.kuaiyouxi.gamepad.sdk.shell.a.b.run():void, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:102:?, code lost:
+
+    throw r2;
+ in method: com.kuaiyouxi.gamepad.sdk.shell.a.a.c.a(int, java.lang.String, java.lang.String, boolean):void, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:103:?, code lost:
+
+    throw r2;
+ in method: com.kuaiyouxi.gamepad.sdk.shell.a.a.c.a(int, java.lang.String, java.lang.String, boolean):void, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.a.a.g.run():void
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.a.a.a.e():void
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.kuaiyouxi.gamepad.sdk.shell.a.a.a.f():void
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - JadxOverflowException in pass: RegionMakerVisitor in method: com.inmobi.androidsdk.ai.controller.util.Base64.Encoder.process(byte[], int, int, boolean):boolean, file: classes.dex, details: Regions count limit reached at block B:69:0x01e8
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.flurry.android.z.d():void
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.flurry.android.z.e():void
+[DefaultDispatcher-worker-8] WARN jadx.core.codegen.RegionGen - Several 'all' handlers in try/catch block in com.flurry.android.t.run():void
+[DefaultDispatcher-worker-8] ERROR jadx.core.utils.ErrorsCounter - JadxOverflowException in pass: RegionMakerVisitor in method: com.burstly.lib.util.Base64.Encoder.process(byte[], int, int, boolean):boolean, file: classes.dex, details: Regions stack size limit reached
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:42:0x002e, code lost:
+
+    if (r3 == null) goto L35;
+ in method: com.burstly.lib.service.IpDownloader.readList():java.util.List<java.lang.String>, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.utils.ErrorsCounter - Code restructure failed: missing block: B:42:0x002e, code lost:
+
+    if (r3 == null) goto L35;
+ in method: com.burstly.lib.service.IpDownloader.readList():java.util.List<java.lang.String>, file: classes.dex
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys
+[DefaultDispatcher-worker-8] WARN jadx.core.dex.trycatch.ExceptionHandler - No support yet for finding bottom block of try body with multipe inner trys

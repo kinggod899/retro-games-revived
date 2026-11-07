@@ -1,0 +1,581 @@
+--------- beginning of main
+D/opengl-gc( 1137): Check pid 11577: running 0
+D/ProcessState(11801): Binder ioctl to enable oneway spam detection failed: Invalid argument
+--------- beginning of system
+I/ActivityTaskManager( 1267): START u0 {flg=0x10000000 cmp=com.chillingo.tinytroopersfree.android.aja/com.unity3d.player.UnityPlayerActivity} from uid 0, pid 11801
+I/ActivityTaskManager( 1267): [KeepAlive] disabled for com.chillingo.tinytroopersfree.android.aja
+W/ActivityTaskManager( 1267): Can't find TaskDisplayArea to determine support for multi window. Task id=1389 attached=false
+D/CompatibilityChangeReporter( 1267): Compat change id reported: 168419799; UID 10045; state: DISABLED
+D/CompatibilityChangeReporter( 1267): Compat change id reported: 135634846; UID 10045; state: DISABLED
+D/CompatibilityChangeReporter( 1267): Compat change id reported: 143937733; UID 10045; state: DISABLED
+I/main    ( 1096): type=1400 audit(0.0:9698): avc: denied { getattr } for path="/apex/com.android.permission/javalib/framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+D/Zygote  ( 1096): Forked child process 11804
+I/ActivityManager( 1267): Start proc 11804:com.chillingo.tinytroopersfree.android.aja/u0a45 for pre-top-activity {com.chillingo.tinytroopersfree.android.aja/com.unity3d.player.UnityPlayerActivity}
+I/main    (11804): type=1400 audit(0.0:9699): avc: denied { search } for name="com.android.permission" dev="sda6" ino=435 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+I/main    (11804): type=1400 audit(0.0:9700): avc: denied { read } for name="framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/main    (11804): type=1400 audit(0.0:9701): avc: denied { open } for path="/apex/com.android.permission/javalib/framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+I/Zygote  (11804): fakeProductInfoIfNeed callded! com.chillingo.tinytroopersfree.android.aja
+I/Zygote  (11804): fake Product info com.chillingo.tinytroopersfree.android.aja not matched any pattern
+I/Zygote  (11804): fakeProductInfoFromProperties callded! com.chillingo.tinytroopersfree.android.aja
+I/main    (11804): type=1400 audit(0.0:9702): avc: denied { read } for name="u:object_r:serialno_prop:s0" dev="tmpfs" ino=8648 scontext=u:r:zygote:s0 tcontext=u:object_r:serialno_prop:s0 tclass=file permissive=1
+E/NemuAppNameUtil(11804): save data success
+E/linker  (11804): do_dlopen failed
+E/linker  (11804): load selected hp /system/etc/mumu-configs/shared_libs/libhp12_x86.so failed
+E/linker  (11804): library "/system/etc/mumu-configs/shared_libs/libhp12_x86.so" ("/system/etc/mumu-configs/shared_libs/libhp12_x86.so") needed or dlopened by "/apex/com.android.art/lib/libnativebridge.so" is not accessible for the namespace: [name="com_android_art", ld_library_paths="", default_library_paths="/apex/com.android.art/lib", permitted_paths="/apex/com.android.art/lib:/system/lib:/data:/apex/com.android.art/javalib"]
+E/linker  (11804): do_dlopen failed
+E/linker  (11804): load origin hp /system/etc/mumu-configs/shared_libs/libhp12_x86.so failed
+E/linker  (11804): hp entrace has not been loaded, ignored
+W/nativebridge(11804): LLLog DoRedirectTranslator not is_gte
+W/nativebridge(11804): Failed to bind-mount /system/etc/cpuinfo.arm.txt as /proc/cpuinfo: No such file or directory
+I/Zygote  (11804): seccomp disabled by setenforce 0
+W/WidgetOperateReceiver( 1856): onReceive: intent = Intent { act=com.mumu.LAUNCHER_LIFECYCLE flg=0x10 pkg=com.mumu.store cmp=com.mumu.store/.widget.receiver.WidgetOperateReceiver (has extras) } action = com.mumu.LAUNCHER_LIFECYCLE
+W/WidgetOperateReceiver( 1856): onLauncherLifecycle: launcherLifecycle = ON_PAUSE
+W/WidgetManager( 1856): updateLauncherLifecycle: launcherLifecycleName = ON_PAUSE
+D/gralloc_x86( 1451): gralloc_alloc: Creating ashmem region of size 3690496
+W/ree.android.aj(11804): Unexpected CPU variant for X86 using defaults: x86_64
+V/libnb   (11804): enter native_bridge2_initialize /data/user/0/com.chillingo.tinytroopersfree.android.aja/code_cache arm
+E/libnb   (11804): The translator implementation library has not been set.
+E/libnb   (11804): get_callbacks native_handle 0x95fe6f09: 1 libnb:/system/lib/libhoudini.so
+I/libnb   (11804): Found /system/lib/libhoudini.so version 6
+D/HP      (11804): initialize private_dir:/data/user/0/com.chillingo.tinytroopersfree.android.aja/code_cache instruction_set:arm
+D/houdini (11804): [11804] Intel Bridge Technology for Netease internal evaluation only, Copyright(C) Intel Corp. 2012-2025.
+D/houdini (11804): [11804] Use permitted only under a valid evaluation software license agreement - all other rights reserved.
+D/houdini (11804): [11804] Initialize library(version: 12.0.1_y.Netease_ev4 RELEASE)... successfully.
+E/ree.android.aj(11804): Not starting debugger since process cannot load the jdwp agent.
+D/ndroid.systemu( 1451): Features: 0 0 0
+E/ndroid.systemu( 1451): vulkan version is 4211003
+D/gralloc_x86( 1451): gralloc_alloc: Creating ashmem region of size 3690496
+D/gralloc_x86( 1451): gralloc_alloc: Creating ashmem region of size 3690496
+D/ProcessState(11804): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/OomAdjuster( 1267): Fallback pre-set sched group to default: not expected top priority
+D/RecentTaskMonitor( 1267): onTaskFocusChanged [FALSE] 2
+D/RecentTaskMonitor( 1267): onTaskFocusChanged [TRUE] 1389 ignoreTFC false
+E/ashmem  (11804): memfd: ro.vndk.version not defined or invalid (), this is mandated since P.
+D/RecentTaskMonitor( 1267): task null or not sub display in notifyDisplayOpened
+D/RecentTaskMonitor( 1267): VAddressShellNotifier#notifyOpenTab :{"uri":"player\/tab","need_response":false,"params":{"id":"task:1389","displayId":0,"userId":0,"name":"小小部队","originName":"小小部队","packageName":"com.chillingo.tinytroopersfree.android.aja","launcher":false,"newTask":true,"icon":"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAAd8SURBVEiJJcV5cFT1AcDx7zv37b6Xze7mICe5DCYcCQgEOSSRQ0kG7VRUBFtrlVatI2PbaW3HaWdqraPVttNSbHXoVFupU2bqWKygoIVogigJAhIwxFwQcm82e5\/v\/fpHP\/98pP3791sdHdue8Biep+LxmB6am8OX56a\/5wgfv72P3msqSDqWoVNXWYBuuHBkg4ralZRXVBGORLFzNrbjYNs5TMNAliR7emb24LEPTvyMT7o\/fj44OyMO\/OWA8Pi9YmlTvXj1hb2iJGAIS5fFivoisXZxidhz53LxyI4WkWfq4lsdS0TXu\/vEPZuaRVnAEqqE0FRZaC5NqG5DPLh7p3j1xefEnp33HJY+O9UVGR69lvf4k0\/gUiW+e08bw9dn+fDUBUQmhelS0XWVZMah0OdhbZVM92AKy\/JQ6POSTNp8eKYfW4BQNGRNRdE1VtbVsn1zW1R2hFB\/+P29ZGNRbizxIekeenvOs6wmQCKZw0bHbbhY31zCC9++gV\/ubmTvtnLyDYmvRiZoqCrBraoIAbIEshDgOPR8NUTOtnXVm+eFSByv47CsrpLDb\/2LbzTr7N1bh1Z5M4qWjz0vER6NIWyFtKxxy80VtN6ez9nxKKGrOQx3D8l0DgSAhPT\/8Pn9qJH5ECYyAa+XmqpSursyFBUvYH7ORSoMJ3uGGAsmyctz49YgkYgjZdLojkNW06hpWM66pTdw7MwlbFlBVmQUSSZjC9ymiTozOswGx0u02ERIMqF4hqOfh+gc6uOLkSiV5aXolpfI\/CTtNSqX5iTOTWaxpBhj16cZmOzmO19rxdJdZByBkBSyAiTA8Fio1Q1LkaUMd+p1XJuJMRKBoZ4QqpjjB48+wDO\/\/SNoHlRZItz9K6yqjWgVGxm4fIHfPPcMA\/94CzmSRs5JSDkbWZMJ6G4qTB+G7kLNpJK0SwqtdoQ3ivw4gBCChZbKWnOa2MA75Lss7GyQ0NgsrrzzyOkRzLEpsjODmLpGTdCmLWNiKyoJYC5nMx4KgiIjS47NBiWJa\/EcK9oWs6iqgpsWVZHIOvR91otlj3Kmp4uYx4t142rCmTz6hkexysv59NwgJ+6+l\/qpDOW2hGKnSYoMKcUhp8komo4qJFDWlaKt01jbl+XLuzbDw5voeHwfr3X1sPXsFT4PO6ytu5t8fyHp+DxXB\/7Mu38\/yrPt7eR6BhiLztNoWhQZKsczIWZyKaKSjappyKrbheu+WhJvhrE\/OkZ2UxFp\/yJe+euzrPn6Lbz08hHaG0sZee9Zhk\/vp\/foS4z0RyjEYnkow3AwwrgseMcJ8+\/ULBOKwLDceE0LTdORM4kYn799FatSQXmkkZnSRj55\/whl2Tl23b+TnmmJrff\/ntf+c5nnf\/0mnZ199H1xlXrLR\/fQVT5NxplQZXKGgeEy8KoahqQgI1B1HflSTyc\/OdlH\/LZGshk\/I4cOsHH391Dqd3FlcJ5UPIoZCHDlqyHCsQQ3LV3I9tuWU9iyktJiP+kshFMp0qkkhu1g5Ry0VJZ0PIWqqKgeXxEP7moiUmBRWL2MGv9Chq8G2XnvVq582Y\/PdKPqKhPTs8RSSWSRIjU3iKt6PWs62olfmOZyKEwi65BL5QhLgjwZXI6MrqioXZ2f8NQvDjL13sOULM4nv2Yr93Y8QDo8ymMbCjncn0ORJJY0LGJscgKkHBIKkblhAne0sf70RRac+gLTrSBsCM6nmM1lGcqm8Wg66vh0kFRGIWLcgRBnEUo7F85foGVZM8OKl9tb3YTCYUoWFHN9apqXD57mbN8A0USWh3Zs5kctTeRd7qd2vZ\/MtSjdH08xmXUYk7J06BqqW1cxZJtVW+4ioTns3fMAKxrrWVK\/CEWyKSnKI5XOUlzgp7p8AYO9XfzuvmrKVq8lOhbgtGXSsrIB\/VY3+vU41sVZovNJ4jjknBxqVkA2lEGrL+PQ639i\/NI5Vq\/aiks28Qe8hGMzNK\/bxokPj1FdarJq83YG1QKKMn5K8ybwb2zDLaehzQOqoGNcYJwZ4r8T8\/T39aGsv6np6TVlppZmigP7\/sDqrTsoL7Dp7RvB59WYmY\/RsHwVbVu2cPBvh5iYijI+GWJ6OoFhFlGhp3DdthrhW0JGWYOxrZCqWyVO9AeprG2w1UBBIXb\/MdS8FZg61BZl6Tx1jXgsxtDIJNenpvGc6mTHrt0obhcNdQHKCqGjRaK6uQBFd5i9eBzvDZvQfR8AHsyyEvY82kDVjc1ILzz945iRc8z7JqZ4MTrAuYkYmuIm3+2huraa4ydPkUiHsIXAI9m0LFnI\/p82gUdh0GniykiK5OQEG1ubUAMlZJLjDF2+yOrN3ySbjKSUZYsbKxuXNK4aLC5kfKiPglQ\/D22wuB7W8BYvoFgO8s4bW3jiqV00r7qVg299xPvHv6R4wSIee+k4r\/zzJKOT07S3mvjdEzz58w8oLmkjOJni9dffPS61NDQUtG1pfS44NXH\/0qXLVE2VOd\/bg6+4HMvyUFNTi9\/rwrRMspJBJpNjZGSUwgIf\/uJSVE3HZ+lUFAQprFnH9FSCcCwr3j96pPvwkfce\/h\/eFEBafo24cgAAAABJRU5ErkJggg==","canChangeAppOrientation":false,"canReceiveFile":false,"pid":11804,"uid":10045,"action":"open"}}
+D/CompatibilityChangeReporter(11804): Compat change id reported: 171979766; UID 10045; state: DISABLED
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 477
+I/Typeface(11804): Preloading /system/fonts/Roboto-Regular.ttf
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+V/GraphicsEnvironment(11804): ANGLE Developer option for 'com.chillingo.tinytroopersfree.android.aja' set to: 'default'
+V/GraphicsEnvironment(11804): ANGLE GameManagerService for com.chillingo.tinytroopersfree.android.aja: false
+V/GraphicsEnvironment(11804): Neither updatable production driver nor prerelease driver is supported.
+D/NetworkSecurityConfig(11804): No Network Security Config specified, using platform default
+D/NetworkSecurityConfig(11804): No Network Security Config specified, using platform default
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, id: 478
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, id: 479
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/libEGL  (11804): loaded /system/lib/egl/libEGL_emulation.so
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, id: 480
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/ree.android.aj(11804): Features: 0 0 0
+E/ree.android.aj(11804): vulkan version is 4211003
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, id: 481
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 482
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, id: 483
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 484
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 485
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 487
+D/nemuinit( 1029): start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, id: 486
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/nemuinit( 1029): Proxy: use callback: 1856, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: 
+D/nemuinit( 1029): Proxy: not handleNemuInitMessage, use next callback
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/nemuinit( 1029): Proxy: use callback: 1419, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.chillingo.tinytroopersfree.android.aja","pid":11804,"uid":10045}}, res: {"errcode":0,"message":"OK"}
+D/nemuinit( 1029): Proxy: finish handleNemuInitMessage
+D/libEGL  (11804): loaded /system/lib/egl/libGLESv1_CM_emulation.so
+D/libEGL  (11804): loaded /system/lib/egl/libGLESv2_emulation.so
+E/GraphicsEnv(11804): Failed to get gpu service
+D/ree.android.aj(11804): Features: 0 0 0
+E/ree.android.aj(11804): vulkan version is 4211003
+W/ServiceManager( 1267): Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10045 pid=11804
+W/ServiceManager( 1267): Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10045 pid=11804
+W/ServiceManager( 1267): Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10045 pid=11804
+W/ServiceManager( 1267): Permission failure: android.permission.HIGH_SAMPLING_RATE_SENSORS from uid=10045 pid=11804
+D/TabManager( 1419): setFocusTaskProp 1389
+W/AccMsgReceiver( 2039): AccMsgReceiver: onReceive action = nemu.intent.action.NEW_TASK
+W/ContextImpl( 1419): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1181 android.content.ContextWrapper.sendBroadcast:479 com.netease.nemu_vapi_android.thread.NewFileUpdater.notifyFocusedTabChanged:499 com.netease.nemu_vapi_android.thread.NewFileUpdater.onOpenNewTask:421 com.netease.nemu_vapi_android.worker.LocalAppManager.updateOnNewTask:259 
+W/ContextImpl( 1419): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1181 android.content.ContextWrapper.sendBroadcast:479 com.netease.nemu_vapi_android.thread.NewFileUpdater.notifyFocusedTabChanged:504 com.netease.nemu_vapi_android.thread.NewFileUpdater.onOpenNewTask:421 com.netease.nemu_vapi_android.worker.LocalAppManager.updateOnNewTask:259 
+D/NewFileUpdater( 1419): onOpenNewTask focusPkgName set to com.chillingo.tinytroopersfree.android.aja
+D/Watchdog( 1419): ignore events AppLaunch: {"app_name":"小小部队","app_package":"com.chillingo.tinytroopersfree.android.aja","event_duration":0,"failure_reason":"","status_code":0}
+D/Watchdog( 1419): upload event v2: AppLaunch	json:{"NB":"{\"NB_MD5\":\"CBB0484AB94828E4C25FC1E75443C206\",\"NB_NAME\":\"libhoudini.so\",\"NB_64BIT\":\"false\",\"NB_STATUS\":\"1\",\"RunningArchitecture\":\"armeabi-v7a\"}","amp_name":"小小部队","ampid":0,"app_name":"小小部队","app_package":"com.chillingo.tinytroopersfree.android.aja","app_version_code":106,"app_version_name":"1.0.6","duration":0,"error_code":0,"error_msg":"ok","is_remote_control":0,"module_name":"androidApp","token":"<REDACTED>"}
+I/servicemanager( 1013): type=1400 audit(0.0:9751): avc: denied { transfer } for scontext=u:r:init:s0 tcontext=u:r:system_app:s0 tclass=binder permissive=1
+D/Watchdog( 1419): upload event: {"architecture":"x86_64","channel":"360rg","country":"zh-CN","engine":"NEMUX","fchannel":"yx-yys-5.0","language":"zh-Hans","mpid":"1","package":"mumu","product":"MuMu6.0","product_version":"6.8.4.0","usage":"0","uuid":"d1d43af1-9948-475d-9259-e9ae263e5643","version":"6.8.4.0","x":{"app_name":"小小部队","app_package":"com.chillingo.tinytroopersfree.android.aja","app_version_code":106,"app_version_name":"1.0.6","error":{"code":0,"msg":"ok"},"extra":{"NB":"{\"NB_MD5\":\"CBB0484AB94828E4C25FC1E75443C206\",\"NB_NAME\":\"libhoudini.so\",\"NB_64BIT\":\"false\",\"NB_STATUS\":\"1\",\"RunningArchitecture\":\"armeabi-v7a\"}","amp_name":"小小部队","ampid":0,"is_remote_control":0},"token":"<REDACTED>"}}	type: LaunchAPP	sign: RTNpytqA+xHjN5v04ta6m5fND6g=	uid: 1000	json:{"app_name":"小小部队","app_package":"com.chillingo.tinytroopersfree.android.aja","app_version_code":106,"app_version_name":"1.0.6","error":{"code":0,"msg":"ok"},"extra":{"NB":"{\"NB_MD5\":\"CBB0484AB94828E4C25FC1E75443C206\",\"NB_NAME\":\"libhoudini.so\",\"NB_64BIT\":\"false\",\"NB_STATUS\":\"1\",\"RunningArchitecture\":\"armeabi-v7a\"}","amp_name":"小小部队","ampid":0,"is_remote_control":0},"token":"<REDACTED>"}
+I/Dns_100_1000( 1094): type=1400 audit(0.0:9752): avc: denied { setopt } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+I/Dns_100_1000( 1094): type=1400 audit(0.0:9753): avc: denied { setattr } for name="UDPv6" dev="sockfs" ino=131146 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+I/Dns_100_1000( 1094): type=1400 audit(0.0:9754): avc: denied { connect } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+I/Dns_100_1000( 1094): type=1400 audit(0.0:9755): avc: denied { getattr } for laddr=10.0.2.15 lport=32800 faddr=117.147.201.42 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+I/RecentTaskMonitor( 1267): broadcast tab opened in android as it's new task1 1389
+W/ActivityManager( 1267): Foreground service started from background can not have location/camera/microphone access: service com.mumu.acc/.AccService
+W/AccMsgReceiver( 2039): AccMsgReceiver: onReceive action = com.mumu.launcher.ACTION_FOCUSED_TAB_CHANGED
+W/AccServiceManager( 2039): onAppLaunch: packageName = com.chillingo.tinytroopersfree.android.aja
+W/TranslateGameManager( 2039): onAppLaunch: packageName = com.chillingo.tinytroopersfree.android.aja, hasPackageLaunchedBefore = false, supportTranslateReally = false, isLocalTranslateEnabled = false
+D/Watchdog( 1419): upload server response: {"errcode": 100, "errmsg": "ok"}
+D/Watchdog( 1419): upload result: true
+D/ree.android.aj(11804): Features: 0 0 0
+E/ree.android.aj(11804): vulkan version is 4211003
+D/hw-ProcessState(11804): Binder ioctl to enable oneway spam detection failed: Invalid argument
+E/HidlServiceManagement(11804): getService: Potential race detected, descriptor: android.hardware.configstore@1.0::ISurfaceFlingerConfigs instance: default
+W/OpenGLRenderer(11804): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+E/HWComposer( 1113): getSupportedContentTypes: getSupportedContentTypes failed for display 4619827820427265280: Unsupported (8)
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11804): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+I/Gralloc4(11804): mapper 4.x is not supported
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11804): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/Gralloc3(11804): mapper 3.x is not supported
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+E/HidlServiceManagement(11804): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+D/ree.android.aj(11804): Features: 0 0 0
+E/ree.android.aj(11804): vulkan version is 4211003
+D/Unity   (11804): Creating OpenGL ES 2.0 context (RGBA32 8888 16/0)
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11804): getService: Potential race detected, descriptor: android.hardware.graphics.allocator@4.0::IAllocator instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.allocator@4.0::IAllocator/default is not registered, trying to start it as a lazy HAL.
+W/Gralloc4(11804): allocator 4.x is not supported
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11804): getService: Potential race detected, descriptor: android.hardware.graphics.allocator@3.0::IAllocator instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.allocator@3.0::IAllocator/default is not registered, trying to start it as a lazy HAL.
+W/Gralloc3(11804): allocator 3.x is not supported
+E/HidlServiceManagement(11804): getService: Potential race detected, descriptor: android.hardware.graphics.allocator@2.0::IAllocator instance: default
+D/gralloc_x86(11804): gralloc_alloc: Creating ashmem region of size 3690496
+D/gralloc_x86(11804): gralloc_alloc: Creating ashmem region of size 3690496
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.allocator@4.0::IAllocator/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.allocator@4.0::IAllocator/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.allocator@3.0::IAllocator/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.allocator@3.0::IAllocator/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+D/gralloc_x86(11804): gralloc_alloc: Creating ashmem region of size 3690496
+D/gralloc_x86(11804): gralloc_alloc: Creating ashmem region of size 3690496
+W/NewFileUpdater( 1419): MSG_GET_PACKAGE_TAG_INFO, no available new tag for: com.chillingo.tinytroopersfree.android.aja, workingTag: 12.2482
+W/libc    (11804): WARNING: generic atexit() called from legacy shared library
+W/libc    (11804): pthread_create sched_setscheduler(1, {94}) call failed: Operation not permitted
+D/AudioFlinger( 1111): Client defaulted notificationFrames to 1024 for frameCount 2048
+D/AF::TrackHandle( 1111): OpPlayAudio: track:69 usage:1 not muted
+W/AudioTrack(11804): Use of stream types is deprecated for operations other than volume control
+W/AudioTrack(11804): See the documentation of AudioTrack() for what to use instead with android.media.AudioAttributes to qualify your playback use case
+D/audio_hw_primary( 1098): tunnel_pcm_open called!
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/gralloc_x86(11804): gralloc_alloc: Creating ashmem region of size 3690496
+W/system_server( 1267): Failed to determine oat file name for dex location /data/app/~~rU6BMAUKvUMNzmJIySG5dQ==/com.chillingo.tinytroopersfree.android.aja-KPh9H9K33P0XKzbugn_rwg==/base.apk: Dalvik cache directory does not exist
+I/ActivityTaskManager( 1267): Displayed com.chillingo.tinytroopersfree.android.aja/com.unity3d.player.UnityPlayerActivity: +2s200ms
+D/gralloc_x86(11804): gralloc_alloc: Creating ashmem region of size 3690496
+I/RenderThread( 1451): type=1400 audit(0.0:9766): avc: denied { use } for path="/dev/ashmemb8b8c37d-1806-4bde-a5ad-cec1e5390267" dev="tmpfs" ino=10166 scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=fd permissive=1 app=com.android.systemui
+W/System  (11804): A resource failed to call close. 
+W/System  (11804): A resource failed to call close. 
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+W/InputManager-JNI( 1267): Input channel object '5374f6e Splash Screen com.chillingo.tinytroopersfree.android.aja (client)' was disposed without first being removed with the input manager!
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(4)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(13)
+I/surfaceflinger( 1113): type=1400 audit(0.0:9767): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:untrusted_app_25:s0:c512,c768 tclass=binder permissive=1
+I/surfaceflinger( 1113): type=1400 audit(0.0:9768): avc: denied { transfer } for scontext=u:r:init:s0 tcontext=u:r:untrusted_app_25:s0:c512,c768 tclass=binder permissive=1
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(7)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(1)
+I/adbd    (10565): type=1400 audit(0.0:9769): avc: denied { read } for path="socket:[116688]" dev="sockfs" ino=116688 scontext=u:r:su:s0 tcontext=u:r:su:s0 tclass=tcp_socket permissive=1
+I/adbd    (10565): type=1400 audit(0.0:9770): avc: denied { use } for path="anon_inode:[eventfd]" dev="anon_inodefs" ino=8025 scontext=u:r:su:s0 tcontext=u:r:adbd:s0 tclass=fd permissive=1
+I/adbd    (11859): type=1400 audit(0.0:9771): avc: denied { read } for name="linker64" dev="sda6" ino=733 scontext=u:r:su:s0 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+I/adbd    (10565): type=1400 audit(0.0:9772): avc: denied { write } for path="socket:[116688]" dev="sockfs" ino=116688 scontext=u:r:su:s0 tcontext=u:r:su:s0 tclass=tcp_socket permissive=1
+I/sh      (11859): type=1400 audit(0.0:9773): avc: denied { read } for name="vendor" dev="tmpfs" ino=9987 scontext=u:r:su:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+I/sh      (11859): type=1400 audit(0.0:9774): avc: denied { write search } for name="tmp" dev="sdc3" ino=3932162 scontext=u:r:su:s0 tcontext=u:object_r:shell_data_file:s0 tclass=dir permissive=1
+I/sh      (11859): type=1400 audit(0.0:9775): avc: denied { getattr } for path="/data/local/tmp" dev="sdc3" ino=3932162 scontext=u:r:su:s0 tcontext=u:object_r:shell_data_file:s0 tclass=dir permissive=1
+D/ProcessState(11859): Binder ioctl to enable oneway spam detection failed: Invalid argument
+D/gralloc_x86( 1113): gralloc_alloc: Creating ashmem region of size 3690496
+D/hw-ProcessState(11859): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/StorageManager( 2164): ignore the failure of setting attributes for /storage/emulated/0/t1.png
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11859): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+I/Gralloc4(11859): mapper 4.x is not supported
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11859): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+W/Gralloc3(11859): mapper 3.x is not supported
+E/HidlServiceManagement(11859): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+D/screencap(11859): Features: 0 0 0
+E/screencap(11859): vulkan version is 4211003
+D/screencap(11859): Features: 0 0 0
+E/screencap(11859): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(11)
+D/ProcessState(11865): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/Unity   (11804): The class defined in script file named 'CrystalUnityBasic' does not match the file name!
+W/Unity   (11804):  
+W/Unity   (11804): (Filename: ./Runtime/Mono/MonoBehaviour.cpp Line: 1492)
+W/Unity   (11804): 
+W/BroadcastQueue( 1267): Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/t1.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+W/Unity   (11804): The class defined in script file named 'iCloudManager' does not match the file name!
+W/Unity   (11804):  
+W/Unity   (11804): (Filename: ./Runtime/Mono/MonoBehaviour.cpp Line: 1492)
+W/Unity   (11804): 
+W/Unity   (11804): The class defined in script file named 'CrystalUnityBasic' does not match the file name!
+W/Unity   (11804):  
+W/Unity   (11804): (Filename: ./Runtime/Mono/MonoBehaviour.cpp Line: 1492)
+W/Unity   (11804): 
+D/CompatibilityChangeReporter( 1267): Compat change id reported: 168419799; UID 10045; state: DISABLED
+I/Prime31-BS(11804): BillingService constructor
+I/Prime31-BS(11804): billing service bound in onBind
+I/Prime31 (11804): service onServiceConnected
+W/ContextImpl(11804): Implicit intents with startService are not safe: Intent { act=com.android.vending.billing.MarketBillingService.BIND } android.content.ContextWrapper.bindService:810 com.prime31.billing.BillingService.bindToMarketBillingService:554 com.prime31.billing.BillingService.access$0:546 
+W/ActivityManager( 1267): Unable to start service Intent { act=com.android.vending.billing.MarketBillingService.BIND } U=0: not found
+E/Prime31-BS(11804): Could not bind to service.
+I/Prime31 (11804): billing service active? false
+I/Prime31 (11804): persisting message due to service not being active
+I/Prime31 (11804): persisted 1 transactions
+I/Prime31 (11804): error in unpersist: pad block corrupted
+I/Prime31 (11804): error attempting to resend transactions: Value 59E58CEA3BA2DDBA00529BCC170C4FFE4D7AB3ECAFD44985DCE512BEA5108A6F0A2062710CBD0C5B1F559B83FA2E8F356651C489E5DE8FB68EC6C8A44D178227 of type java.lang.String cannot be converted to JSONArray
+I/pidof   (11870): type=1400 audit(0.0:9810): avc: denied { search } for name="1" dev="proc" ino=8422 scontext=u:r:su:s0 tcontext=u:r:kernel:s0 tclass=dir permissive=1
+I/pidof   (11870): type=1400 audit(0.0:9811): avc: denied { read } for name="cmdline" dev="proc" ino=11275 scontext=u:r:su:s0 tcontext=u:r:kernel:s0 tclass=file permissive=1
+I/pidof   (11870): type=1400 audit(0.0:9812): avc: denied { open } for path="/proc/1/cmdline" dev="proc" ino=11275 scontext=u:r:su:s0 tcontext=u:r:kernel:s0 tclass=file permissive=1
+I/pidof   (11870): type=1400 audit(0.0:9813): avc: denied { search } for name="1001" dev="proc" ino=8967 scontext=u:r:su:s0 tcontext=u:r:vendor_init:s0 tclass=dir permissive=1
+I/pidof   (11870): type=1400 audit(0.0:9814): avc: denied { read } for name="cmdline" dev="proc" ino=15335 scontext=u:r:su:s0 tcontext=u:r:vendor_init:s0 tclass=file permissive=1
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(2)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(7)
+W/BatteryExternalStatsWorker( 1267): error reading modem stats:ERROR_PHONE_NOT_AVAILABLE
+E/system_server( 1267): Cannot read thread CPU times for PID 1267
+I/Binder:1032_2( 1032): type=1400 audit(0.0:9851): avc: denied { read } for name="event_count" dev="sysfs" ino=2826 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+I/Binder:1032_2( 1032): type=1400 audit(0.0:9852): avc: denied { open } for path="/sys/devices/LNXSYSTM:00/LNXPWRBN:00/wakeup/wakeup4/event_count" dev="sysfs" ino=2826 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+I/Binder:1032_2( 1032): type=1400 audit(0.0:9853): avc: denied { read } for name="event_count" dev="sysfs" ino=9887 scontext=u:r:init:s0 tcontext=u:object_r:sysfs_wakeup:s0 tclass=file permissive=1
+I/Binder:1032_2( 1032): type=1400 audit(0.0:9854): avc: denied { open } for path="/sys/devices/virtual/wakeup/wakeup18/event_count" dev="sysfs" ino=9887 scontext=u:r:init:s0 tcontext=u:object_r:sysfs_wakeup:s0 tclass=file permissive=1
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+I/AudioOut_D( 1111): type=1400 audit(0.0:9855): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+D/ProcessState(11872): Binder ioctl to enable oneway spam detection failed: Invalid argument
+I/screencap(11872): type=1400 audit(0.0:9856): avc: denied { search } for name="/" dev="fuse" ino=3801089 scontext=u:r:su:s0 tcontext=u:object_r:fuse:s0 tclass=dir permissive=1
+I/screencap(11872): type=1400 audit(0.0:9857): avc: denied { write } for name="0" dev="fuse" ino=3801091 scontext=u:r:su:s0 tcontext=u:object_r:fuse:s0 tclass=dir permissive=1
+I/screencap(11872): type=1400 audit(0.0:9858): avc: denied { add_name } for name="t2.png" scontext=u:r:su:s0 tcontext=u:object_r:fuse:s0 tclass=dir permissive=1
+D/gralloc_x86( 1113): gralloc_alloc: Creating ashmem region of size 3690496
+W/StorageManager( 2164): ignore the failure of setting attributes for /storage/emulated/0/t2.png
+I/bg      ( 2164): type=1400 audit(0.0:9859): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:mediaprovider_app:s0:c33,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1 app=com.android.providers.media.module
+D/hw-ProcessState(11872): Binder ioctl to enable oneway spam detection failed: Invalid argument
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11872): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+I/Gralloc4(11872): mapper 4.x is not supported
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11872): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/Gralloc3(11872): mapper 3.x is not supported
+E/HidlServiceManagement(11872): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+I/Binder:11872_1(11872): type=1400 audit(0.0:9860): avc: denied { read write } for name="vaddress" dev="tmpfs" ino=11273 scontext=u:r:su:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+D/screencap(11872): Features: 0 0 0
+E/screencap(11872): vulkan version is 4211003
+D/screencap(11872): Features: 0 0 0
+E/screencap(11872): vulkan version is 4211003
+D/ProcessState(11878): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/BroadcastQueue( 1267): Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/t2.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(2)
+W/libc    (11804): pthread_create sched_setscheduler(1, {90}) call failed: Operation not permitted
+E/system_server( 1267): Cannot read thread CPU times for PID 1267
+I/pidof   (11883): type=1400 audit(0.0:9865): avc: denied { search } for name="2164" dev="proc" ino=19678 scontext=u:r:su:s0 tcontext=u:r:mediaprovider_app:s0:c33,c256,c512,c768 tclass=dir permissive=1
+I/pidof   (11883): type=1400 audit(0.0:9866): avc: denied { search } for name="2269" dev="proc" ino=20038 scontext=u:r:su:s0 tcontext=u:r:permissioncontroller_app:s0:c32,c256,c512,c768 tclass=dir permissive=1
+I/pidof   (11883): type=1400 audit(0.0:9867): avc: denied { read } for name="cmdline" dev="proc" ino=21443 scontext=u:r:su:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+I/pidof   (11883): type=1400 audit(0.0:9868): avc: denied { open } for path="/proc/2498/cmdline" dev="proc" ino=21443 scontext=u:r:su:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+I/Unity   (11804): No data save file found.
+I/Unity   (11804):  
+I/Unity   (11804): (Filename: ./Runtime/ExportGenerated/AndroidManaged/UnityEngineDebug.cpp Line: 43)
+I/Unity   (11804): 
+I/Unity   (11804): No dataS save file found.
+I/Unity   (11804):  
+I/Unity   (11804): (Filename: ./Runtime/ExportGenerated/AndroidManaged/UnityEngineDebug.cpp Line: 43)
+I/Unity   (11804): 
+D/FlurryAgent(11804): Initializing Flurry session
+D/FlurryAgent(11804): New session
+I/ree.android.aja(11804): type=1400 audit(0.0:9869): avc: denied { search } for name="com.android.tzdata" dev="sda6" ino=547 scontext=u:r:untrusted_app_25:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+W/Settings(11804): Setting android_id has moved from android.provider.Settings.System to android.provider.Settings.Secure, returning read-only value.
+I/FlurryAgent(11804): Agent cache file doesn't exist.
+D/CompatibilityChangeReporter( 1267): Compat change id reported: 168936375; UID 10045; state: DISABLED
+D/CompatibilityChangeReporter( 1267): Compat change id reported: 73144566; UID 10045; state: DISABLED
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(1)
+D/FlurryAgent(11804): generating report
+D/FlurryAgent(11804): Sending report to: http://data.flurry.com/aap.do
+W/AlarmManager( 1267): Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda1@aec23bb
+W/AlarmManager( 1267): Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda1@aec23bb
+W/AlarmManager( 1267): Unrecognized alarm listener com.android.server.location.gnss.GnssLocationProvider$$ExternalSyntheticLambda0@71060d8
+D/FlurryAgent(11804): Sending report exception: Unable to resolve host "data.flurry.com": No address associated with hostname
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(9)
+I/Prime31 (11804): initializing Twitter service
+I/Prime31-OAS(11804): request token endpoint: https://api.twitter.com/oauth/request_token
+I/Prime31 (11804): FacebookPlugin constructor running.  Creating Handler.  Current thread: GLThread 27
+I/Prime31 (11804): initializing Facebook object with appId: <REDACTED>
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(20)
+I/Binder:1094_2( 1094): type=1400 audit(0.0:9882): avc: denied { read write } for path="socket:[130402]" dev="sockfs" ino=130402 scontext=u:r:init:s0 tcontext=u:r:untrusted_app_25:s0:c512,c768 tclass=tcp_socket permissive=1
+I/Binder:1094_2( 1094): type=1400 audit(0.0:9883): avc: denied { getopt } for scontext=u:r:init:s0 tcontext=u:r:untrusted_app_25:s0:c512,c768 tclass=tcp_socket permissive=1
+I/Binder:1094_2( 1094): type=1400 audit(0.0:9884): avc: denied { setopt } for scontext=u:r:init:s0 tcontext=u:r:untrusted_app_25:s0:c512,c768 tclass=tcp_socket permissive=1
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(20)
+I/compat_ram_d( 1031): type=1400 audit(0.0:9885): avc: denied { read } for name="cpu" dev="proc" ino=4026532064 scontext=u:r:init:s0 tcontext=u:object_r:proc_pressure_cpu:s0 tclass=file permissive=1
+I/compat_ram_d( 1031): type=1400 audit(0.0:9886): avc: denied { open } for path="/proc/pressure/cpu" dev="proc" ino=4026532064 scontext=u:r:init:s0 tcontext=u:object_r:proc_pressure_cpu:s0 tclass=file permissive=1
+I/compat_ram_d( 1031): type=1400 audit(0.0:9887): avc: denied { getattr } for path="/proc/pressure/cpu" dev="proc" ino=4026532064 scontext=u:r:init:s0 tcontext=u:object_r:proc_pressure_cpu:s0 tclass=file permissive=1
+I/compat_ram_d( 1031): type=1400 audit(0.0:9888): avc: denied { read } for name="io" dev="proc" ino=4026532062 scontext=u:r:init:s0 tcontext=u:object_r:proc_pressure_io:s0 tclass=file permissive=1
+I/compat_ram_d( 1031): type=1400 audit(0.0:9889): avc: denied { open } for path="/proc/pressure/io" dev="proc" ino=4026532062 scontext=u:r:init:s0 tcontext=u:object_r:proc_pressure_io:s0 tclass=file permissive=1
+I/compat_ram_d( 1031): type=1400 audit(0.0:9890): avc: denied { getattr } for path="/proc/pressure/io" dev="proc" ino=4026532062 scontext=u:r:init:s0 tcontext=u:object_r:proc_pressure_io:s0 tclass=file permissive=1
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(1)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+I/netd    ( 1094): type=1400 audit(0.0:9891): avc: denied { create } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+I/netd    ( 1094): type=1400 audit(0.0:9892): avc: denied { connect } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+I/netd    ( 1094): type=1400 audit(0.0:9893): avc: denied { write } for path="socket:[131636]" dev="sockfs" ino=131636 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+I/netd    ( 1094): type=1400 audit(0.0:9894): avc: denied { nlmsg_read } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/ProcessState(11896): Binder ioctl to enable oneway spam detection failed: Invalid argument
+D/gralloc_x86( 1113): gralloc_alloc: Creating ashmem region of size 3690496
+W/StorageManager( 2164): ignore the failure of setting attributes for /storage/emulated/0/t3.png
+D/hw-ProcessState(11896): Binder ioctl to enable oneway spam detection failed: Invalid argument
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11896): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+I/Gralloc4(11896): mapper 4.x is not supported
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+E/HidlServiceManagement(11896): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/Gralloc3(11896): mapper 3.x is not supported
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+E/HidlServiceManagement(11896): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+D/screencap(11896): Features: 0 0 0
+E/screencap(11896): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/screencap(11896): Features: 0 0 0
+E/screencap(11896): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(20)
+D/ProcessState(11902): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/BroadcastQueue( 1267): Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/t3.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(2)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+I/netd    ( 1094): type=1400 audit(0.0:9895): avc: denied { read } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_nflog_socket permissive=1
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(3)
+I/pidof   (11906): type=1400 audit(0.0:9896): avc: denied { read } for name="cmdline" dev="proc" ino=16799 scontext=u:r:su:s0 tcontext=u:r:webview_zygote:s0 tclass=file permissive=1
+I/pidof   (11906): type=1400 audit(0.0:9897): avc: denied { open } for path="/proc/1643/cmdline" dev="proc" ino=16799 scontext=u:r:su:s0 tcontext=u:r:webview_zygote:s0 tclass=file permissive=1
+I/pidof   (11906): type=1400 audit(0.0:9898): avc: denied { search } for name="11204" dev="proc" ino=122931 scontext=u:r:su:s0 tcontext=u:r:mediaprovider:s0:c512,c768 tclass=dir permissive=1
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+I/Binder:1094_4( 1094): type=1400 audit(0.0:9899): avc: denied { create } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=key_socket permissive=1
+I/NetworkStats( 1267): type=1400 audit(0.0:9900): avc: denied { map_write } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=bpf permissive=1
+I/iptables-restor( 1230): type=1400 audit(0.0:9901): avc: denied { create } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=rawip_socket permissive=1
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+E/TelephonyManager( 1267): Error calling setDataEnabledForReason e:java.lang.IllegalStateException: telephony service is null.
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(12)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(4)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(4)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+E/android.hardware.power.stats@1.0-service-mock( 1107): Failed to getEnergyData
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(6)
+D/NetworkTimeUpdateService( 1267): Stale NTP fix; forcing refresh
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+I/Binder:1094_2( 1094): type=1400 audit(0.0:9903): avc: denied { read write } for path="socket:[131686]" dev="sockfs" ino=131686 scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=udp_socket permissive=1
+I/Binder:1094_2( 1094): type=1400 audit(0.0:9904): avc: denied { getopt } for scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=udp_socket permissive=1
+I/Binder:1094_2( 1094): type=1400 audit(0.0:9905): avc: denied { setopt } for lport=36371 scontext=u:r:init:s0 tcontext=u:r:system_server:s0 tclass=udp_socket permissive=1
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+W/BestClock( 1267): java.time.DateTimeException: Missing NTP fix
+E/TelephonyManager( 1267): Error calling setDataEnabledForReason e:java.lang.IllegalStateException: telephony service is null.
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(5)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(12)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(5)
+D/ProcessState(11910): Binder ioctl to enable oneway spam detection failed: Invalid argument
+D/gralloc_x86( 1113): gralloc_alloc: Creating ashmem region of size 3690496
+W/StorageManager( 2164): ignore the failure of setting attributes for /storage/emulated/0/t4.png
+D/hw-ProcessState(11910): Binder ioctl to enable oneway spam detection failed: Invalid argument
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11910): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+I/Gralloc4(11910): mapper 4.x is not supported
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11910): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/Gralloc3(11910): mapper 3.x is not supported
+E/HidlServiceManagement(11910): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+D/screencap(11910): Features: 0 0 0
+E/screencap(11910): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(7)
+D/screencap(11910): Features: 0 0 0
+E/screencap(11910): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(17)
+D/ProcessState(11916): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/BroadcastQueue( 1267): Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/t4.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(9)
+I/pidof   (11920): type=1400 audit(0.0:9906): avc: denied { read } for name="cmdline" dev="proc" ino=16698 scontext=u:r:su:s0 tcontext=u:r:network_stack:s0 tclass=file permissive=1
+I/pidof   (11920): type=1400 audit(0.0:9907): avc: denied { open } for path="/proc/1614/cmdline" dev="proc" ino=16698 scontext=u:r:su:s0 tcontext=u:r:network_stack:s0 tclass=file permissive=1
+D/SntpClient( 1267): request time failed: java.net.SocketTimeoutException: Poll timed out
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(2)
+D/SntpClient( 1267): request time failed: java.net.SocketTimeoutException: Poll timed out
+D/ProcessState(11922): Binder ioctl to enable oneway spam detection failed: Invalid argument
+D/gralloc_x86( 1113): gralloc_alloc: Creating ashmem region of size 3690496
+W/StorageManager( 2164): ignore the failure of setting attributes for /storage/emulated/0/t5.png
+D/hw-ProcessState(11922): Binder ioctl to enable oneway spam detection failed: Invalid argument
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11922): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+I/Gralloc4(11922): mapper 4.x is not supported
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+E/HidlServiceManagement(11922): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+W/Gralloc3(11922): mapper 3.x is not supported
+E/HidlServiceManagement(11922): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+D/screencap(11922): Features: 0 0 0
+E/screencap(11922): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/screencap(11922): Features: 0 0 0
+E/screencap(11922): vulkan version is 4211003
+D/ProcessState(11928): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/BroadcastQueue( 1267): Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/t5.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(1)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/SntpClient( 1267): request time failed: java.net.SocketTimeoutException: Poll timed out
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(10)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(4)
+D/ProcessState(11934): Binder ioctl to enable oneway spam detection failed: Invalid argument
+D/gralloc_x86( 1113): gralloc_alloc: Creating ashmem region of size 3690496
+W/StorageManager( 2164): ignore the failure of setting attributes for /storage/emulated/0/t6.png
+D/hw-ProcessState(11934): Binder ioctl to enable oneway spam detection failed: Invalid argument
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11934): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+I/Gralloc4(11934): mapper 4.x is not supported
+I/hwservicemanager( 1014): getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+E/HidlServiceManagement(11934): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+I/hwservicemanager( 1014): Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+W/libc    ( 1014): Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+I/hwservicemanager( 1014): Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+W/Gralloc3(11934): mapper 3.x is not supported
+E/HidlServiceManagement(11934): getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+D/screencap(11934): Features: 0 0 0
+E/screencap(11934): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(3)
+D/screencap(11934): Features: 0 0 0
+E/screencap(11934): vulkan version is 4211003
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(20)
+D/AudioFlinger( 1111): mixer(0x7365a7277a30) throttle end: throttle time(12)
+D/ProcessState(11940): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/BroadcastQueue( 1267): Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/t6.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+D/SntpClient( 1267): request time failed: java.net.SocketTimeoutException: Poll timed out
+D/SntpClient( 1267): request time failed
+I/sh      (11951): type=1400 audit(0.0:9908): avc: denied { read } for name="/" dev="tmpfs" ino=9943 scontext=u:r:su:s0 tcontext=u:object_r:tmpfs:s0 tclass=dir permissive=1
+I/sh      (11951): type=1400 audit(0.0:9909): avc: denied { open } for path="/" dev="tmpfs" ino=9943 scontext=u:r:su:s0 tcontext=u:object_r:tmpfs:s0 tclass=dir permissive=1
+D/ProcessState(11948): Binder ioctl to enable oneway spam detection failed: Invalid argument
+W/FastPrintWriter( 1267): Write failure
+W/FastPrintWriter( 1267): java.io.IOException: write failed: EPIPE (Broken pipe)
+W/FastPrintWriter( 1267): 	at libcore.io.IoBridge.write(IoBridge.java:654)
+W/FastPrintWriter( 1267): 	at java.io.FileOutputStream.write(FileOutputStream.java:401)
+W/FastPrintWriter( 1267): 	at com.android.internal.util.FastPrintWriter.flushBytesLocked(FastPrintWriter.java:354)
+W/FastPrintWriter( 1267): 	at com.android.internal.util.FastPrintWriter.flushLocked(FastPrintWriter.java:377)
+W/FastPrintWriter( 1267): 	at com.android.internal.util.FastPrintWriter.appendLocked(FastPrintWriter.java:322)
+W/FastPrintWriter( 1267): 	at com.android.internal.util.FastPrintWriter.print(FastPrintWriter.java:499)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowStateAnimator.dump(WindowStateAnimator.java:785)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowState.dump(WindowState.java:4395)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.RootWindowContainer.lambda$dumpWindowsNoHeader$9(RootWindowContainer.java:1283)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.RootWindowContainer$$ExternalSyntheticLambda31.accept(Unknown Source:10)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply(WindowContainer.java:2452)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer$ForAllWindowsConsumerWrapper.apply(WindowContainer.java:2442)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowState.applyInOrderWithImeWindows(WindowState.java:5009)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowState.forAllWindows(WindowState.java:4897)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.DisplayContent$ImeContainer.forAllWindowForce(DisplayContent.java:4899)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.DisplayContent.forAllImeWindows(DisplayContent.java:2667)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowState.applyImeWindowsIfNeeded(WindowState.java:5002)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowState.applyInOrderWithImeWindows(WindowState.java:5008)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowState.forAllWindows(WindowState.java:4897)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.ActivityRecord.forAllWindowsUnchecked(ActivityRecord.java:4267)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.ActivityRecord.forAllWindows(ActivityRecord.java:4262)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.TaskDisplayArea.forAllWindows(TaskDisplayArea.java:693)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1400)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowContainer.forAllWindows(WindowContainer.java:1417)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.RootWindowContainer.dumpWindowsNoHeader(RootWindowContainer.java:1280)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowManagerService.dumpWindowsNoHeaderLocked(WindowManagerService.java:6465)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowManagerService.dumpWindowsLocked(WindowManagerService.java:6460)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowManagerService.doDump(WindowManagerService.java:6815)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowManagerService.access$100(WindowManagerService.java:345)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowManagerService$3.dump(WindowManagerService.java:535)
+W/FastPrintWriter( 1267): 	at com.android.server.utils.PriorityDump.dump(PriorityDump.java:182)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowManagerService.dump(WindowManagerService.java:6728)
+W/FastPrintWriter( 1267): 	at android.os.Binder.doDump(Binder.java:887)
+W/FastPrintWriter( 1267): 	at android.os.Binder.dump(Binder.java:877)
+W/FastPrintWriter( 1267): 	at android.os.Binder.onTransact(Binder.java:813)
+W/FastPrintWriter( 1267): 	at android.view.IWindowManager$Stub.onTransact(IWindowManager.java:3021)
+W/FastPrintWriter( 1267): 	at com.android.server.wm.WindowManagerService.onTransact(WindowManagerService.java:1438)
+W/FastPrintWriter( 1267): 	at android.os.Binder.execTransactInternal(Binder.java:1184)
+W/FastPrintWriter( 1267): 	at android.os.Binder.execTransact(Binder.java:1143)
+W/FastPrintWriter( 1267): Caused by: android.system.ErrnoException: write failed: EPIPE (Broken pipe)
+W/FastPrintWriter( 1267): 	at libcore.io.Linux.writeBytes(Native Method)
+W/FastPrintWriter( 1267): 	at libcore.io.Linux.write(Linux.java:296)
+W/FastPrintWriter( 1267): 	at libcore.io.ForwardingOs.write(ForwardingOs.java:951)
+W/FastPrintWriter( 1267): 	at libcore.io.BlockGuardOs.write(BlockGuardOs.java:447)
+W/FastPrintWriter( 1267): 	at libcore.io.IoBridge.write(IoBridge.java:649)
+W/FastPrintWriter( 1267): 	... 48 more
+W/System  ( 1267): A resource failed to call release. 
+I/logcat  (11954): type=1400 audit(0.0:9910): avc: denied { connectto } for path="/dev/socket/logdr" scontext=u:r:su:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1

@@ -1,0 +1,254 @@
+__cxa_finalize
+__dso_handle
+__INIT_ARRAY__
+__FINI_ARRAY__
+__aeabi_uidiv
+__aeabi_unwind_cpp_pr0
+munmap
+pthread_mutex_lock
+pthread_mutex_unlock
+__android_log_print
+strlen
+memset
+strcpy
+__aeabi_uidivmod
+strcmp
+memcpy
+mprotect
+__errno
+strerror
+strrchr
+strncmp
+__stack_chk_fail
+__stack_chk_guard
+dlopen
+getuid
+geteuid
+fcntl
+getgid
+getegid
+strlcpy
+__set_tls
+getpid
+strsep
+__aeabi_uldivmod
+__aeabi_unwind_cpp_pr1
+JNI_OnLoad
+snprintf
+ANativeActivity_onCreate
+UnitySendMessage
+inflateEnd
+inflate
+malloc
+inflateInit2_
+fclose
+fseek
+ftell
+fwrite
+fread
+fopen
+libc.so
+libm.so
+libdl.so
+liblog.so
+libz.so
+__udivsi3
+__div0
+__gnu_uldivmod_helper
+raise
+__udivdi3
+__gnu_ldivmod_helper
+__divdi3
+_Unwind_VRS_Get
+_Unwind_VRS_Set
+_Unwind_GetCFA
+_Unwind_Complete
+_Unwind_DeleteException
+__cxa_begin_cleanup
+__cxa_type_match
+__gnu_unwind_execute
+__cxa_call_unexpected
+__aeabi_unwind_cpp_pr2
+__gnu_Unwind_Find_exidx
+__exidx_end
+__exidx_start
+__gnu_Unwind_Restore_VFP_D
+__gnu_Unwind_Restore_VFP
+__gnu_Unwind_Restore_VFP_D_16_to_31
+__gnu_Unwind_Restore_WMMXD
+__gnu_Unwind_Restore_WMMXC
+__gnu_Unwind_Backtrace
+__gnu_Unwind_ForcedUnwind
+abort
+__gnu_Unwind_RaiseException
+__gnu_Unwind_Resume_or_Rethrow
+__gnu_Unwind_Resume
+_Unwind_VRS_Pop
+__gnu_Unwind_Save_VFP_D
+__gnu_Unwind_Save_VFP
+__gnu_Unwind_Save_VFP_D_16_to_31
+__gnu_Unwind_Save_WMMXD
+__gnu_Unwind_Save_WMMXC
+__restore_core_regs
+___Unwind_RaiseException
+___Unwind_Resume
+___Unwind_Resume_or_Rethrow
+___Unwind_ForcedUnwind
+___Unwind_Backtrace
+_Unwind_GetTextRelBase
+_Unwind_GetDataRelBase
+_Unwind_GetLanguageSpecificData
+_Unwind_GetRegionStart
+__gnu_unwind_frame
+_edata
+__bss_start
+__bss_start__
+__bss_end__
+__end__
+libunity_proxy.so
+dlopen
+dlclose
+dlsym
+dlerror
+dladdr
+dl_unwind_find_exidx
+%s: %s
+Cannot load library
+Invalid library handle
+Invalid symbol name
+Symbol not found
+Symbol is not global
+link_image
+is_prelinked
+alloc_info
+reserve_mem_region
+alloc_mem_region
+load_library
+free_info
+%s[%d]: %5d name %s is not in solist!
+ERROR: %5d name %s is not in solist!
+%s[%d]: %5d library name %s too long
+ERROR: %5d library name %s too long
+%s[%d]: %5d too many libraries when loading %s
+ERROR: %5d too many libraries when loading %s
+%s[%d]: %5d cannot locate '%s'...
+ERROR: %5d cannot locate '%s'...
+%s[%d]: %5d unknown weak reloc type %d @ %p (%d)
+ERROR: %5d unknown weak reloc type %d @ %p (%d)
+%s[%d]: %5d odd RELATIVE form...
+ERROR: %5d odd RELATIVE form...
+%s[%d]: %5d unknown reloc type %d @ %p (%d)
+ERROR: %5d unknown reloc type %d @ %p (%d)
+%s[%d]: %5d can NOT map (%sprelinked) library '%s' at 0x%08x as requested, will try general pool: %d (%s)
+ERROR: %5d can NOT map (%sprelinked) library '%s' at 0x%08x as requested, will try general pool: %d (%s)
+%s[%d]: %5d %s: could not unload dependent library
+ERROR: %5d %s: could not unload dependent library
+%s[%d]: %5d '%s' failed to load previously
+ERROR: %5d '%s' failed to load previously
+%s[%d]: OOPS: %5d recursive link to '%s'
+ERROR: OOPS: %5d recursive link to '%s'
+%s/%s
+%s[%d]: Library '%s' not found
+ERROR: Library '%s' not found
+%s[%d]: lseek() failed!
+ERROR: lseek() failed!
+%s[%d]: read() failed!
+ERROR: read() failed!
+%s[%d]: %5d - %s is not a valid ELF object
+ERROR: %5d - %s is not a valid ELF object
+%s[%d]: %5d - No loadable segments found in %s.
+ERROR: %5d - No loadable segments found in %s.
+%s[%d]: OOPS: %5d cannot map library '%s'. no vspace available.
+ERROR: OOPS: %5d cannot map library '%s'. no vspace available.
+%s[%d]: %d failed to map segment from '%s' @ 0x%08x (0x%08x). p_vaddr=0x%08x p_offset=0x%08x
+ERROR: %d failed to map segment from '%s' @ 0x%08x (0x%08x). p_vaddr=0x%08x p_offset=0x%08x
+%s[%d]: %d failed to get current offset in '%s'.
+ERROR: %d failed to get current offset in '%s'.
+%s[%d]: %d failed to seek to offset 0x%08x in '%s'.
+ERROR: %d failed to seek to offset 0x%08x in '%s'.
+%s[%d]: %d failed to read %08x bytes @ 0x%08x in '%s'.
+ERROR: %d failed to read %08x bytes @ 0x%08x in '%s'.
+%s[%d]: %d failed to set position to 0x%08x in '%s'.
+ERROR: %d failed to set position to 0x%08x in '%s'.
+%s[%d]: [ %5d - failed to extend segment from '%s' @ 0x%08x (0x%08x) ]
+ERROR: [ %5d - failed to extend segment from '%s' @ 0x%08x (0x%08x) ]
+%s[%d]: %5d - Total length (0x%08x) of mapped segments from '%s' is greater than what was allocated (0x%08x). THIS IS BAD!
+ERROR: %5d - Total length (0x%08x) of mapped segments from '%s' is greater than what was allocated (0x%08x). THIS IS BAD!
+%s[%d]: %5d multiple PT_DYNAMIC segments found in '%s'. Segment at 0x%08x, previously one found at 0x%08x
+ERROR: %5d multiple PT_DYNAMIC segments found in '%s'. Segment at 0x%08x, previously one found at 0x%08x
+%s[%d]: %5d missing PT_DYNAMIC?!
+ERROR: %5d missing PT_DYNAMIC?!
+%s[%d]: DT_RELA not supported
+ERROR: DT_RELA not supported
+%s[%d]: %5d DT_RELA not supported
+ERROR: %5d DT_RELA not supported
+%s[%d]: %5d missing essential tables
+ERROR: %5d missing essential tables
+%s[%d]: %5d could not load needed library '%s' for '%s' (%s)
+ERROR: %5d could not load needed library '%s' for '%s' (%s)
+/dev/null
+%s[%d]: Cannot open /dev/null.
+ERROR: Cannot open /dev/null.
+%s[%d]: nullify_stdio: unhandled error %s
+ERROR: nullify_stdio: unhandled error %s
+%s[%d]: %5d Shared library '%s' has a preinit_array table @ 0x%08x. This is INVALID.
+ERROR: %5d Shared library '%s' has a preinit_array table @ 0x%08x. This is INVALID.
+%s[%d]: failed to link %s
+ERROR: failed to link %s
+%s[%d]: nullify_stdio: dup2 error %s
+ERROR: nullify_stdio: dup2 error %s
+%s[%d]: nullify_stdio: close error %s
+ERROR: nullify_stdio: close error %s
+DEBUG=
+LD_LIBRARY_PATH=
+LD_PRELOAD=
+/system/bin/linker
+CANNOT LINK EXECUTABLE
+find_library
+load_segments
+get_lib_extents
+nullify_closed_stdio
+call_constructors
+unload_library
+reloc_library
+0123456789abcdef
+0123456789
+0123456789ABCDEF
+unable to link / %s
+java/lang/RuntimeException
+proxy
+Added shared lib %s 0x%08x
+JNI_OnLoad
+No JNI_OnLoad found in %s 0x%08x
+ANativeActivity_onCreate
+unity
+error: ANativeActivity_onCreate not found...
+UnitySendMessage
+error: UnitySendMessage not found...
+/assets/libs/armeabi-v7a/libunity.so
+com/unity3d/player/UnityPlayer
+currentActivity
+Landroid/app/Activity;
+getPackageCodePath
+()Ljava/lang/String;
+1.2.3
+libdl.so
+aeabi
+GCC: (GNU) 4.4.3
+.shstrtab
+.hash
+.dynsym
+.dynstr
+.rel.dyn
+.rel.plt
+.text
+.rodata
+.ARM.extab
+.ARM.exidx
+.init_array
+.fini_array
+.data.rel.ro
+.dynamic
+.data
+.ARM.attributes
+.comment
